@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Exercice 5</title>
+</head>
+<body>
+    <div>
+        <p><a href="index.html">Accueil</a></p>
+    </div>
+    <form>
+        <div><label for="lastName">Nom : </label><input type="text" name="lastName" id="lastName" class="inputForm" /></div>
+        <div><label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" class="inputForm" /></div>
+        <div><input type="submit" name="button" value="Envoyer" /></div>
+    </form>
+    <script src="content/jquery.js"></script>
+    <script>
+        $('.inputForm').focus(function () {
+            $(this).css('border', '1px solid green');
+        });
+        $('.inputForm').blur(function () {
+            $(this).css('border', '1px solid red');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+C:\www\Module 4\Partie 1\Exo4\Exo4\bin\Debug\Exo4.exe.config
+C:\www\Module 4\Partie 1\Exo4\Exo4\bin\Debug\Exo4.exe
+C:\www\Module 4\Partie 1\Exo4\Exo4\bin\Debug\Exo4.pdb
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\MainWindow.g.cs
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\App.g.cs
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\Exo4_MarkupCompile.cache
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\Exo4_MarkupCompile.lref
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\MainWindow.baml
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\Exo4.g.resources
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\Exo4.Properties.Resources.resources
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\Exo4.csproj.GenerateResource.cache
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\Exo4.csproj.CoreCompileInputs.cache
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\Exo4.exe
+C:\www\Module 4\Partie 1\Exo4\Exo4\obj\Debug\Exo4.pdb

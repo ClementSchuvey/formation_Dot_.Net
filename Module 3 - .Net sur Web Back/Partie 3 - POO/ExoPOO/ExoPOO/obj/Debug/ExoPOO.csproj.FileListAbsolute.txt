@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\ExoPOO\ExoPOO\bin\Debug\ExoPOO.exe.config
+C:\Users\Dell\source\repos\ExoPOO\ExoPOO\bin\Debug\ExoPOO.exe
+C:\Users\Dell\source\repos\ExoPOO\ExoPOO\bin\Debug\ExoPOO.pdb
+C:\Users\Dell\source\repos\ExoPOO\ExoPOO\obj\Debug\ExoPOO.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\ExoPOO\ExoPOO\obj\Debug\ExoPOO.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\ExoPOO\ExoPOO\obj\Debug\ExoPOO.exe
+C:\Users\Dell\source\repos\ExoPOO\ExoPOO\obj\Debug\ExoPOO.pdb

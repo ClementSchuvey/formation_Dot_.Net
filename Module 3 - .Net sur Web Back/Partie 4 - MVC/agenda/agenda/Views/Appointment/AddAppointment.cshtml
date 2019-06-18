@@ -1,0 +1,52 @@
+﻿@model agenda.Models.appointments
+@{
+    ViewBag.Title = "Ajouter un rendez-vous";
+}
+
+<div class="container backgroundWhite mt-3 p-3">
+    @* Titre du formulaire *@
+    <div class="row">
+        <div class="col-12">
+            <p class="titleForm text-white backgroundGreen p-2">Ajouter un Rendez-vous</p>
+        </div>
+    </div>
+    @* Formulaire d'ajout de RDV *@
+    <div class="row">
+        <form class="col-12 pr-4 pl-4 font-weight-bold" action="@Url.Action("AddAppointment", "Appointment")" method="post">
+            @Html.AntiForgeryToken()
+            <div class="row">
+                @* Datepicker fait avec Tempus Dominus *@
+                <div class="col-12 mb-2">
+                    @Html.LabelFor(model => model.dateHour)
+                    <div class="form-group">
+                        <div class="input-group date" id="dateHourAppointment" data-target-input="nearest">
+                            @Html.EditorFor(model => model.dateHour, new { @Value = DateTime.Now, htmlAttributes = new { @class = "form-control datetimepicker-input", @data_target = "#dateHourAppointment" } })
+                            <div class="input-group-append" data-target="#dateHourAppointment" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(model => model.dateHour, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 col-lg-6 mb-4">
+                    @Html.LabelFor(model => model.id_brokers)
+                    @Html.DropDownListFor(model => model.id_brokers, ViewBag.listbrokers as SelectList, "Choisissez un courtier", new { @class = "custom-select" })
+                    @Html.ValidationMessageFor(model => model.id_brokers, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 col-lg-6 mb-4">
+                    @Html.LabelFor(model => model.id_customers)
+                    @Html.DropDownListFor(model => model.id_customers, ViewBag.listCustomers as SelectList, "Choisissez un client", new { @class = "custom-select" })
+                    @Html.ValidationMessageFor(model => model.id_customers, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 mb-4">
+                    @Html.LabelFor(model => model.subject)
+                    @Html.TextAreaFor(model => model.subject, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.subject, "", new { @class = "text-danger" })
+                </div>
+                <button type="submit" class="btn mx-auto buttonForm backgroundGreen">Ajouter RDV</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

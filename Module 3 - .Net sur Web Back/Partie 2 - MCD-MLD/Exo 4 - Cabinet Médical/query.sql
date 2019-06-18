@@ -1,0 +1,227 @@
+--/*------------------------------------------------------------
+--*        Script SQLSERVER 
+--------------------------------------------------------------*/
+
+
+--/*------------------------------------------------------------
+---- Table: specialty
+--------------------------------------------------------------*/
+--CREATE TABLE specialty(
+--	id              INT IDENTITY (1,1) NOT NULL ,
+--	nameSpecialty   VARCHAR (50) NOT NULL  ,
+--	CONSTRAINT specialty_PK PRIMARY KEY (id)
+--);
+
+
+--/*------------------------------------------------------------
+---- Table: doctors 
+--------------------------------------------------------------*/
+--CREATE TABLE doctors(
+--	id             INT IDENTITY (1,1) NOT NULL ,
+--	lastName       VARCHAR (50) NOT NULL ,
+--	firstName      VARCHAR (50) NOT NULL ,
+--	mail           VARCHAR (100) NOT NULL ,
+--	id_specialty   INT  NOT NULL  ,
+--	CONSTRAINT doctors_PK PRIMARY KEY (id)
+
+--	,CONSTRAINT doctors_specialty_FK FOREIGN KEY (id_specialty) REFERENCES specialty(id)
+--);
+
+
+--/*------------------------------------------------------------
+---- Table: patient
+--------------------------------------------------------------*/
+--CREATE TABLE patient(
+--	id            INT IDENTITY (1,1) NOT NULL ,
+--	lastName      VARCHAR (50) NOT NULL ,
+--	firstName     VARCHAR (50) NOT NULL ,
+--	birthDate     DATETIME NOT NULL ,
+--	id_doctors    INT  NOT NULL  ,
+--	CONSTRAINT patient_PK PRIMARY KEY (id)
+
+--	,CONSTRAINT patient_doctors_FK FOREIGN KEY (id_doctors) REFERENCES doctors(id)
+--);
+
+
+--/*------------------------------------------------------------
+---- Table: timeSlot
+--------------------------------------------------------------*/
+--CREATE TABLE timeSlot(
+--	id     INT IDENTITY (1,1) NOT NULL ,
+--	time   VARCHAR (100) NOT NULL  ,
+--	CONSTRAINT timeSlot_PK PRIMARY KEY (id)
+--);
+
+
+--/*------------------------------------------------------------
+---- Table: meet
+--------------------------------------------------------------*/
+--CREATE TABLE meet(
+--	id            INT IDENTITY (1,1) NOT NULL ,
+--	date          DATETIME NOT NULL ,
+--	id_patient    INT  NOT NULL ,
+--	id_timeSlot   INT  NOT NULL ,
+--	id_doctors    INT  NOT NULL  ,
+--	CONSTRAINT meet_PK PRIMARY KEY (id)
+
+--	,CONSTRAINT meet_patient_FK FOREIGN KEY (id_patient) REFERENCES patient(id)
+--	,CONSTRAINT meet_timeSlot0_FK FOREIGN KEY (id_timeSlot) REFERENCES timeSlot(id)
+--	,CONSTRAINT meet_doctors1_FK FOREIGN KEY (id_doctors) REFERENCES doctors(id)
+--);
+
+--INSERT INTO [dbo].[specialty] ([nameSpecialty])
+--VALUES
+--    ('Généraliste'),
+--    ('Neurologue'),
+--    ('Oncologue')
+--GO
+
+--INSERT INTO [dbo].[doctors]([lastName], [firstName], [mail], [id_specialty])
+--VALUES 
+--    ('House', 'Grégory', 'jeboitegmal@gmail.com', 1),
+--    ('Strange', 'Stephen', 'strange@gmail.com', 2),
+--    ('Grey', 'Meredith', '50nuancesdemeredith@gmail.com', 3),
+--    ('Karev', 'Alex', 'alex@gmail.com', 1),
+--    ('Swango', 'Michael', 'psychoswango@gmail.com', 2)
+--GO
+
+--INSERT INTO [dbo].[timeSlot] ([time])
+--VALUES
+--    ('8H - 9H'),
+--    ('9H - 10H'),
+--    ('10H - 11H'),
+--    ('11H - 12H'),
+--    ('14H - 15H'),
+--    ('15H - 16H'),
+--    ('16H - 17H'),
+--    ('17H - 18')
+--GO
+--INSERT INTO [dbo].[patient]([firstName], [lastName],[birthDate],[id_doctors])
+--VALUES
+--    ('Balthazar', 'STARK', '19971013 00:00:00', 1),
+--    ('Bazile', 'RODRIGUEZ', '19960913 00:00:00', 2),
+--    ('Baudoin', 'BLANC', '19950813 00:00:00', 3),
+--    ('Bob', 'FERNANDEZ', '19940613 00:00:00', 4),
+--    ('Boubaker', 'RIVIERE', '19930513 00:00:00', 5),
+--    ('Brandon', 'DUPUY', '19920413 00:00:00', 5),
+--    ('Zahr-Eddine', 'BONNET', '19910313 00:00:00', 4),
+--    ('Zaid', 'SANCHEZ', '19900213 00:00:00', 3),
+--    ('Zakarya', 'FABRE', '19890113 00:00:00', 2),
+--    ('Nabile', 'ROQUES', '19881012 00:00:00', 1),
+--    ('Kassandra', 'DURAND', '19871011 00:00:00', 1),
+--    ('Katharina', 'PONS', '19861016 00:00:00', 2),
+--    ('Galeane', 'PEREZ', '19851018 00:00:00', 4),
+--    ('Clémentine', 'LOPEZ', '19841010 00:00:00', 5),
+--    ('Corentine', 'MARTINEZ', '19831013 00:00:00', 1),
+--    ('Cyrine', 'PUJOL', '19821005 00:00:00', 5),
+--    ('Colette', 'VIDAL', '19811011 00:00:00', 2),
+--    ('Quentin', 'MARTIN', '19801013 00:00:00', 4),
+--    ('Quiesie-Vanessa', 'FAURE', '19791013 00:00:00', 2),
+--    ('Vanessa', 'MARTY', '19781013 00:00:00', 3)
+--GO
+--INSERT INTO [dbo].[meet] ([date], [id_patient], [id_timeSlot], [id_doctors])
+--VALUES
+--    ('20190507 00:00:00', 1, 1, 1),
+--    ('20190507 00:00:00', 2, 2, 2),
+--    ('20190507 00:00:00', 3, 3, 3),
+--    ('20190507 00:00:00', 4, 4, 4),
+--    ('20190507 00:00:00', 5, 5, 5),
+--    ('20190507 00:00:00', 6, 6, 1),
+--    ('20190507 00:00:00', 7, 7, 2),
+--    ('20190507 00:00:00', 8, 8, 3),
+--    ('20190508 00:00:00', 9, 1, 4),
+--    ('20190508 00:00:00', 10, 2, 5),
+--    ('20190508 00:00:00', 11, 3, 1),
+--    ('20190508 00:00:00', 12, 4, 2),
+--    ('20190508 00:00:00', 13, 5, 3),
+--    ('20190508 00:00:00', 14, 6, 4),
+--    ('20190508 00:00:00', 15, 7, 5),
+--    ('20190508 00:00:00', 16, 8, 1),
+--    ('20190509 00:00:00', 17, 1, 2),
+--    ('20190509 00:00:00', 18, 2, 3),
+--    ('20190509 00:00:00', 19, 3, 4),
+--    ('20190509 00:00:00', 20, 4, 5),
+--    ('20190509 00:00:00', 1, 5, 2),
+--    ('20190509 00:00:00', 2, 6, 3),
+--    ('20190509 00:00:00', 13, 7, 3),
+--    ('20190509 00:00:00', 4, 8, 4),
+--    ('20190510 00:00:00', 5, 1, 3),
+--    ('20190510 00:00:00', 16, 2, 4),
+--    ('20190510 00:00:00', 17, 3, 3),
+--    ('20190510 00:00:00', 18, 4, 4),
+--    ('20190510 00:00:00', 19, 5, 3),
+--    ('20190510 00:00:00', 10, 6, 4)
+--GO
+
+--Exo 1:
+--SELECT 
+--	[dbo].[meet].[date] AS [Date RDV],
+--	[dbo].[timeSlot].[time] AS [Heure RDV],
+--	[dbo].[patient].[firstName] AS [Prénom Patient],
+--	[dbo].[patient].[lastName] AS [Nom Patient],
+--	[dbo].[doctors].[lastName] AS [Nom Docteur],
+--	[dbo].[specialty].[nameSpecialty] AS [Spécialité du docteur]
+--FROM
+--	[dbo].[meet]
+--INNER JOIN
+--	[dbo].[timeSlot]
+--	ON [dbo].[timeSlot].[id] = [dbo].[meet].[id_timeSlot]
+--INNER JOIN
+--	[dbo].[patient]
+--	ON [dbo].[patient].[id] = [dbo].[meet].[id_patient]
+--INNER JOIN
+--	[dbo].[doctors]
+--	ON [dbo].[doctors].[id] = [dbo].[meet].[id_doctors]
+--INNER JOIN
+--	[dbo].[specialty]
+--	ON [dbo].[specialty].[id] = [dbo].[doctors].[id_specialty]
+--GO
+
+--Exo 2
+--SELECT 
+--    [dbo].[doctors].[lastName] AS [Nom du Docteur],
+--    [dbo].[meet].[date] AS [Date RDV],
+--    [dbo].[timeSlot].[time] AS [Heure RDV],
+--    [dbo].[patient].[lastName] AS [Nom Patient],
+--    [dbo].[patient].[firstName] AS [Prénom Patient]
+--FROM
+--    [dbo].[meet]
+--INNER JOIN 
+--    [dbo].[doctors]
+--    ON [dbo].[doctors].[id] = [dbo].[meet].[id_doctors]
+--INNER JOIN 
+--    [dbo].[timeSlot]
+--    ON [dbo].[timeSlot].[id] = [dbo].[meet].[id_timeSlot]
+--INNER JOIN
+--    [dbo].[patient]
+--    ON [dbo].[patient].[id] = [dbo].[meet].[id_patient]
+--WHERE 
+--     [dbo].[doctors].[id] = 2
+--GO
+
+--Exo 3
+--SELECT 
+--	LOWER([dbo].[patient].[firstName]) AS [Prénom Patient],
+--	UPPER([dbo].[patient].[lastName]) AS [Nom Patient],
+--	LOWER([dbo].[doctors].[firstName]) AS [Prénom Docteur],
+--	UPPER([dbo].[doctors].[lastName]) AS [Nom Docteur],
+--	[dbo].[specialty].[nameSpecialty] AS [Spécialité du docteur],
+--	FORMAT([dbo].[meet].[date], 'dd/MM/yyyy') AS [Date RDV],
+--	[dbo].[timeSlot].[time] AS [Heure RDV]
+--FROM
+--	[dbo].[meet]
+--INNER JOIN
+--	[dbo].[timeSlot]
+--	ON [dbo].[timeSlot].[id] = [dbo].[meet].[id_timeSlot]
+--INNER JOIN
+--	[dbo].[patient]
+--	ON [dbo].[patient].[id] = [dbo].[meet].[id_patient]
+--INNER JOIN
+--	[dbo].[doctors]
+--	ON [dbo].[doctors].[id] = [dbo].[meet].[id_doctors]
+--INNER JOIN
+--	[dbo].[specialty]
+--	ON [dbo].[specialty].[id] = [dbo].[doctors].[id_specialty]
+--WHERE
+--	[dbo].[patient].[id] = 1
+--GO

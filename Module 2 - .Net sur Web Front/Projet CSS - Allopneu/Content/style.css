@@ -1,0 +1,817 @@
+﻿/*PARTIE CLEMENT */
+#header{
+    margin-bottom:2rem;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#multipleSpaces{
+    height: 20px;
+}
+#descriptionSite{
+    font-size: 0.55em;
+    color: grey;
+}
+#customerSpace{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.70em;
+    padding-top: 6px;
+    font-weight: bold;
+}
+#customerSpace:hover{
+    background-color: orangered;
+    text-decoration: none;
+}
+#professionalSpace{
+    background-color: dimgrey;
+    font-size: 0.59em;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+}
+#professionalSpace:hover{
+    background-color: orangered;
+    text-decoration: none;
+}
+#contactPicture{
+    width: 130px;
+    height: 45px;
+    margin-top: 50px;
+}
+#cartNav{
+    width: 30px;
+    height: 60px;
+    margin-top: 40px;
+    border-left: 1px solid darkgrey;
+}
+#myCart{
+    padding-left: 0px;
+    margin-top: 50px;
+    padding-right: 10px;
+}
+#myCartText{
+    font-weight: bold;
+}
+#emptyCart{
+    color: orangered;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+#mainWheels{
+    background-color: #0C3759;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+#rims:hover{
+    text-decoration: none;
+    background-color: #4E4E4E;
+    color: white;
+}
+#promotionsWheels{
+    background-color: red;
+    font-weight: bold;
+}
+#promotionsWheels:hover{
+    background-color: darkred;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+#winterWheels{
+    background-color: dodgerblue;
+    font-weight: bold;
+}
+#winterWheels:hover{
+    background-color: #20809E;
+    color: white;
+    text-decoration: none;
+}
+#motorBikeScooterWheels:hover{
+    color: white;
+    background-color: #5E840C;
+    text-decoration: none;
+}
+#quadWheels:hover{
+    background-color: #2F5408;
+    color: white;
+    text-decoration: none;
+}
+#agricoleWheels:hover{
+    background-color: #5C3702;
+    color: white;
+    text-decoration: none;
+}
+#truckWheels:hover{
+    background-color: #7D1D07;
+    color: white;
+    text-decoration: none;
+}
+#montageWheels{
+    background-color: #0C3759;
+    font-weight: bold;
+}
+#montageWheels:hover{
+    text-decoration: none;
+    color: white;
+}
+#listWheels > a{
+    background-color: #0C3759;
+    color: white;
+    font-size: 10.4px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+#listWheels > a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: steelblue;
+}
+#listWheels > #wheelsAccessories{
+    background-color: skyblue;
+}
+#listWheels > #wheelsAccessories:hover{
+    background-color: #0C3759;
+}
+#v-pills-tab{
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    text-indent: 0px;
+}
+.typeWheels{
+    font-size: 12px;
+}
+.productsNav {
+    font-size: 12px;
+    background-color: grey;
+    color: white;
+    border-right: 1px solid white;
+    text-align: center;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+#v-pills-home {
+    background-color: #007BFF;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+#v-pills-home > select {
+    height: 20px;
+    border: none;
+    width: 70px;
+}
+.input-group-addon{
+    margin-bottom: 0px;
+}
+.nav-link {
+    padding-right: 0px;
+    color: white;
+}
+.fontVerticalBold{
+    color: darkblue;
+}
+#search-box {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #007BFF;
+}
+#descriptionNavs{
+    padding: 0px;
+    border: none;
+}
+#searchButtonWheels{
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    width:90%;
+}
+/*FIN PARTIE CLEMENT*/
+/* PARTIE CLEMENTS*/
+#chooseTire {
+    background-color: #f2f2f2;
+    margin-bottom:2rem;
+}
+#tutorialAssembly {
+    font-size: 12px;
+    font-weight: bold;
+}
+#secondStepAssembly, #firstStepAssembly {
+    font-size: 12px;
+    font-weight: bold;
+    background: url('https://static.allopneus.com/images/tuto_montage/chevron-right.png') right center no-repeat;
+}
+#secondStepAssembly > img, #firstStepAssembly > img, #thirdStepAssembly > img {
+        height: 35px;
+    }
+#secondStepAssembly > p > span, #firstStepAssembly > p > span, #thirdStepAssembly > p > span {
+        color: #ff6600;
+    }
+#fourthStepAssembly {
+    color: #ffffff;
+    font-size: 11px;
+    background-color: #343434;
+}
+#fourthStepAssembly > img {
+        float: left;
+        height: 100%;
+        margin-left: -70px;
+    }
+#formSearchZip {
+    margin: 1rem 0;
+}
+#inputSearchCenterAssemblyForZip {
+    float: left;
+    width: 90%;
+    height: 30px;
+    padding: 2px;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+    color: #353535;
+    margin-bottom: 1rem;
+}
+#buttonSearchCenterAssemblyForZip {
+    float: left;
+    width: 10%;
+    height: 30px;
+    border: none;
+    background-color: #ff6600;
+    border-radius: 0 3px 3px 0;
+    padding: 2px;
+}
+#buttonSearchCenterAssemblyForZip > img {
+        height: 100%;
+        width: 100%;
+    }
+#informationMessage {
+    background: #ff6600;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    height: 22px;
+    margin-bottom: 2rem;
+}
+#youtubeLink {
+    background-color: #343434;
+}
+#logoYoutubeLink {
+    height: 20px;
+}
+#borderYoutubeLink {
+    float: left;
+    height: 22px;
+    margin-left: -15px;
+}
+#informationMessage::before {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 22px;
+    height: 15px;
+    content: '';
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #ff6600;
+}
+.elementNavChooseTypeTire {
+    color: #3e3e3e;
+    line-height: 50px;
+    padding-left: 50px;
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.elementNavChooseTypeTire::before {
+        content: '';
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 7px;
+        background: url('https://static.allopneus.com/images/refonte_homes/widgets/pictos_widget_home.png') 0 -240px no-repeat;
+        background-position-x: 0px;
+    }
+#topTireSummer::before {
+    background-position-y: 0px;
+}
+#topTireAllSaison::before {
+    background-position-y: -60px;
+}
+#topTireWinter::before {
+    background-position-y: -120px;
+}
+#rimsAndTire::before {
+    background-position-y: -360px;
+}
+#soldChainSnow::before {
+    background-position-y: -600px;
+}
+.elementNavChooseTypeTire:hover, #navChooseTypeTire > div > .active {
+    color: #ff6600;
+    background-color: #fff;
+}
+.elementNavChooseTypeTire:hover::before, #navChooseTypeTire > div > .active::before {
+        background-position-x: -60px;
+    }
+.carouselTopTirePromo {
+    background-color: #fff;
+}
+.carouselTopTirePromo > ol > li {
+        background: url("https://static.allopneus.com/images/refonte_homes/pagination_slider.png") left top no-repeat;
+    }
+.carouselTopTirePromo > ol > .active {
+        background: url("https://static.allopneus.com/images/refonte_homes/pagination_slider_active.png") left top no-repeat;
+    }
+#displayTire {
+    margin-bottom: 2rem;
+}
+.blockOneTireCarouselPromo {
+    border: 1px solid #e7e7e7;
+    float: left;
+    width: 50%;
+    height: 480px;
+}
+.blockTwoTireCarouselPromo {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    float: left;
+    width: 50%;
+    height: 160px;
+}
+.blockThreeTireCarouselPromo {
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    float: left;
+    width: 50%;
+    height: 160px;
+}
+.blockFourTireCarouselPromo {
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    float: left;
+    width: 50%;
+    height: 160px;
+}
+.infoTireCarouselPromo {
+    color: #3e3d40;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.carouselImgBackground {
+    width: 100%;
+}
+.titleTireCarouselPromo {
+    font-weight: bold;
+    text-align: left;
+}
+.rateTireCarouselPromo {
+    color: #3e3d40;
+}
+.imgRateTireCarouselPromo {
+    width: 90%;
+}
+.messagePriceTireCarouselPromo {
+    color: #3e3d40;
+    margin-left: 1rem;
+}
+.priceTireCarouselPromo {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 1rem;
+}
+.buttonCheckTireCarouselPromo {
+    background-color: #ff6600;
+    padding: 10px 1rem;
+    color: #fff;
+}
+#imgPubRimsAndTire, #imgPubChainSnow {
+    width: 100%;
+}
+#markTireChooseTire {
+    border-top: 1px solid #dcdcdc;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#textMarkTireChooseTire {
+    font-size: 20px;
+    color: #3e3e3e;
+}
+#selectChooseMarkTire {
+    height: 30px;
+    border: 0;
+    width:90%;
+}
+#selectChooseMarkTire option.premiumSelectChooseMarkTire.titleSelectChooseMarkTire {
+        background-color: #7F7A4A;
+    }
+#selectChooseMarkTire option.premiumSelectChooseMarkTire {
+        background-color: #FFF494;
+    }
+#selectChooseMarkTire option.qualitySelectChooseMarkTire.titleSelectChooseMarkTire {
+        background-color: #826844;
+    }
+#selectChooseMarkTire option.qualitySelectChooseMarkTire {
+        background-color: #FFCD85;
+    }
+#selectChooseMarkTire option.ecoSelectChooseMarkTire.titleSelectChooseMarkTire {
+        background-color: #61707F;
+    }
+#selectChooseMarkTire option.ecoSelectChooseMarkTire {
+        background-color: #C2DFFF;
+    }
+#selectChooseMarkTire option.rechapesSelectChooseMarkTire.titleSelectChooseMarkTire {
+        background-color: #3C3C3C;
+        color: #FFF
+    }
+#selectChooseMarkTire option.rechapesSelectChooseMarkTire {
+        background-color: #AEAEAE;
+    }
+/*FIN PARTIE CLEMENTS*/
+/* PARTIE JOSHUA */
+#InfoDetaille{
+    margin-bottom:2rem;
+}
+.bgOrange {
+    background-color: #FF6600;
+    color: white;
+}
+.bgGray {
+    background-color: #484848;
+    color: white;
+}
+.orange {
+    color: #FF6600
+}
+.centerText {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+#blocImage {
+    position: absolute;
+    width: 92%;
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 14px;
+}
+#blocImage p {
+        width: 100%;
+        position: absolute;
+        bottom: 15%;
+        right: 6%;
+        font-weight: bold;
+    }
+#blocImage > .customButton {
+        width: 30%;
+        position: absolute;
+        bottom: 3%;
+        right: 4%;
+        font-size: 12px;
+    }
+#shipping > .customButton {
+    width: 30%;
+    position: absolute;
+    bottom: 2%;
+    right: 8%;
+    font-size: 12px;
+}
+#blocImage > .arrow-orange {
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 10px solid #FF6600;
+    border-bottom: 10px solid transparent;
+    top: 0;
+    left: 10px;
+}
+.arrow-orange {
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 10px solid #FF6600;
+    border-bottom: 10px solid transparent;
+    top: 0;
+    left: 10px;
+}
+.arrow-gray {
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 10px solid #FF6600;
+    border-bottom: 10px solid transparent;
+    top: 0;
+    left: 10px;
+}
+.textBold {
+    font-weight: bold;
+    font-size: 14px;
+}
+.textNormal {
+    font-weight: normal;
+    font-size: 14px;
+}
+.linkColor {
+    color: white;
+}
+#shipping {
+    height: 230px;
+}
+#fastShipping {
+    background-color: #f6f6f6;
+    border-top: 1% #d6d6d6 solid;
+}
+.underline {
+    text-decoration: underline;
+}
+#shipping {
+    max-height: 255px;
+}
+ #shipping > #img {
+     position: absolute;
+    width: 30%;
+    top: 0%;
+    right: 10%;
+    z-index: 2;
+}
+.conseil {
+    padding-top: 2%;
+}
+.textAlignment {
+    padding-left: 66%;
+    font-weight: normal;
+}
+.backgroundStyle {
+    background-color: #f6f6f6;
+    border: 1% #d6d6d6 solid;
+}
+.video {
+    padding-left: 3%;
+}
+.videoText {
+    padding-left: 3%;
+    font-size: 12px;
+}
+#headerPopup {
+    margin: 0;
+}
+#secondLine {
+    padding-top: 10%;
+}
+.customImg {
+    position: relative;
+}
+#michelin {
+    top: 0;
+}
+.star {
+    font-weight: bold;
+}
+.WheelTopText {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.WheelLongetivity > img, .WheelQuality > img, .WheelComfort > img, WheelSecurity > img{
+    float: left;
+    width: 30%;
+}
+
+.WheelLongetivity > .WheelMark, .WheelQuality > .WheelMark, .WheelComfort > .WheelMark, .WheelSecurity > .WheelMark {
+    width: 70%;
+}
+/* FIN JOSHUA */
+/* PARTIE MATHIAS */
+#formNewsletter > input{
+    width:100%;
+}
+.mailColor {
+    color: orange;
+    border-color: red;
+}
+#footer {
+    background-color: #FF6600;
+    color: white;
+    margin: auto;
+}
+.footerTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 50px;
+    vertical-align: baseline;
+    word-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+    text-align: center;
+    padding-left: 30px;
+}
+#valide {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-indent: 4px;
+    background-color: #020202;
+    color: white;
+    margin: 1px 0 0 40px;
+    padding: 0 15px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 22px;
+}
+#footerbackgroundcolor {
+    background-color: #D7D7D7;
+}
+.rgpd {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+}
+#result {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    text-indent: 0px;
+}
+#footermid {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-indent: 10px;
+}
+.imageSize {
+    height: 100px;
+}
+#footerLinks {
+    color: #625f5f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 10px;
+    vertical-align: top;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 5px;
+    line-height: 15px;
+}
+.titleTop {
+    color: #F36600;
+    text-indent: 10px;
+}
+#footerLinksBot {
+    color: #625f5f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    vertical-align: top;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    list-style-type: none;
+    float: left;
+    margin-top: 5px;
+    padding-left: 0px;
+}
+#footerPayment {
+    color: #625f5f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    vertical-align: top;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
+    float: left;
+}
+.footerLinksBackgroundColor {
+    background-color: white;
+}
+#pay1 {
+    display: block;
+    width: 47px;
+    height: 26px;
+    background: url("../Images/payment.png");
+    margin: auto;
+}
+#pay2 {
+    display: block;
+    width: 47px;
+    height: 26px;
+    background: url("../Images/payment.png");
+    background-position: -47px 0;
+    margin: auto;
+}
+#pay3 {
+    display: block;
+    width: 47px;
+    height: 26px;
+    background: url("../Images/payment.png") no-repeat;
+    background-position: -141px 0;
+    margin: auto;
+}
+#pay4 {
+    display: block;
+    width: 47px;
+    height: 26px;
+    background: url("../Images/payment.png") no-repeat;
+    background-position: -235px 0;
+    margin: auto;
+}
+#pay5 {
+    display: block;
+    width: 47px;
+    height: 26px;
+    background: url("../Images/payment.png") no-repeat;
+    background-position: -329px 0;
+    margin: auto;
+}
+#pay6 {
+    display: block;
+    width: 47px;
+    height: 26px;
+    background: url("../Images/payment.png") no-repeat;
+    background-position: -282px 0;
+    margin: auto;
+}
+#pay7 {
+    display: block;
+    width: 47px;
+    height: 26px;
+    background: url('../Images/payment.png') no-repeat;
+    background-position: -188px 0;
+    margin: auto;
+}
+#pay8 {
+    display: block;
+    width: 47px;
+    height: 26px;
+    background: url('../Images/payment.png') no-repeat;
+    background-position: -470px 0;
+    margin: auto;
+}
+.listNone {
+    list-style-type: none;
+    margin-top: 5px;
+}
+/* FIN MATHIAS */
+@media screen and (max-width: 991px) {
+    #secondStepAssembly, #firstStepAssembly {
+        background: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    #informationMessage {
+        height: auto;
+    }
+    #informationMessage::before {
+        content: none;
+    }
+    .blockOneTireCarouselPromo, .blockTwoTireCarouselPromo, .blockThreeTireCarouselPromo, .blockFourTireCarouselPromo {
+        width: 100%;
+        height: auto;
+    }
+    #logoAllopneus {
+        margin-top: 40px;
+        margin-left: 35px;
+    }
+    #cartNav {
+        border: none;
+    }
+    .productsNav {
+        border: 1px solid white;
+        margin-top: 2px;
+    }
+}

@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Projet ECommerce</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/toastr.css" rel="stylesheet" />
+    <link href="Content/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <img class="rounded" id="logo" title="Logo" alt="Logo d'un chien" src="Image/logo/LogoTPLT.png" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="btnHome" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="btnFood" href="#">Nourriture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="btnHeal" href="#">Soin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="btnAccessory" href="#">Accessoire</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#modalCart"><i class="fas fa-shopping-cart"></i> Panier (<span id="countProduct">0</span>)</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel slide col-12 p-0" data-ride="carousel">
+                        <ol class="carousel-indicators text-center">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel1.jpg" title="First slide" alt="First slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel2.jpg" title="second slide" alt="second slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel3.jpg" title="Third slide" alt="Third slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel4.jpg" title="Fourth slide" alt="Fourth slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel5.jpg" title="Fifth slide" alt="Fifth slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel6.jpg" title="sixth slide" alt="sixth slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel7.jpg" title="Seventh slide" alt="Seventh slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel8.jpg" title="eighth slide" alt="eighth slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel9.jpg" title="nineth slide" alt="nineth slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel10.png" title="Tenth slide" alt="Tenth slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel11.jpg" title="eleventh slide" alt="eleventh slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="imageCarousel" src="Image/imageCarousel/imageCarousel12.png" title="Twelfth slide" alt="Twelfth slide">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="p-0 container-fluid">
+                        <div class="p-0 textePromo boxGreen col-12">
+                            <p class="m-0 p-2 policeCenter"><span class="policeBold">PROMOTIONS</span> Jusqu'à -30% sur tous les produits</p>
+                        </div>
+                        <div class="noPadding col-12 border solid">
+                            <div id="carouselPromo" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row justify-content-md-center">
+                                            <div class="col-12 col-md-10">
+                                                <img class="imageCarrouselPromo d-block w-50" src="Image/carouselV/accessoire_1.jpg" title="promotion sac de transport" alt="Sac de transport cuir confortable parfait pour petit et moyen chien" />
+                                                <img class="imagePourcent" src="Image/carouselV/30pourcent.gif" title="pourcentage de la promotion" alt="Les articles sont à -30%" />
+                                                <div class="account">
+                                                    <p>Avec le sac de transport "toutou pour le toutou" déplacez votre animal en toute sérénité pour votre chien.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-md-center">
+                                            <div class="col-12 col-md-10">
+                                                <img class="imageCarrouselPromo d-block w-50" src="Image/carouselV/doudoune.jpg" title="promotion manteau pour chien" alt="Manteau hiver pour petit chien" />
+                                                <img class="imagePourcent" src="Image/carouselV/30pourcent.gif" title="pourcentage de la promotion" alt="Les articles sont à -30%" />
+                                                <div class="account">
+                                                    <p>Dimensions : Longueur de dos 25 cm, Tour de poitrail 15 cm parfait pour affronter le froid.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-md-center">
+                                            <div class="col-12 col-md-10">
+                                                <img class="imageCarrouselPromo d-block w-50" src="Image/carouselV/accessoire_3.jpg" title="promotion soin pelage" alt="Tipee pour chien décoratif et amusant pour le chien" />
+                                                <img class="imagePourcent" src="Image/carouselV/30pourcent.gif" title="pourcentage de la promotion" alt="Les articles sont à -30%" />
+                                                <div class="account">
+                                                    <p> <strong>Coup de ❤ promo !</strong> Taille : 60 x 60 x 70CM convient pour animaux de 7-15 kg Matériel：100% coton. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-md-center">
+                                            <div class="col-12 col-md-10">
+                                                <img class="imageCarrouselPromo d-block w-50" src="Image/carouselV/accessoire_4.jpg" title="promotion parfum pour chien" alt="Parfum pour chien odeur des îles parfait pour masquer certaines odeurs" />
+                                                <img class="imagePourcent" src="Image/carouselV/30pourcent.gif" title="pourcentage de la promotion" alt="Les articles sont à -30%" />
+                                                <div class="account">
+                                                    <p>Parfum des îles Mauritius contre les mauvaises odeurs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row sm-2 justify-content-md-center">
+                                            <div class="col-12 col-md-10">
+                                                <img class="imageCarrouselPromo d-block w-50" src="Image/carouselV/accessoire_5.jpg" title="promotion spa pelage" alt="spa pelage sec votre chien va adorer ce soin relaxant à l’eau florale de genévrier bio aux vertus apaisante" />
+                                                <img class="imagePourcent" src="Image/carouselV/30pourcent.gif" title="pourcentage de la promotion" alt="Les articles sont à -30%" />
+                                                <div class="account">
+                                                    <p>Shampoing Bondi wash pelage brillant.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselPromo" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselPromo" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                    <div class="container">
+                                        <div class="row">
+                                            <img class="img-fluid specialPromo d-block w-50" src="Image/carouselV/specialpromo.png" alt="image de promotion" title="promotion" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="foodCategory">
+        <div class="container">
+            <div class="row">
+                <div class="card-deck" id="food">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="healCategory ">
+        <div class="container">
+            <div class="row">
+                <div class="card-deck" id="heal">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="accessoryCategory">
+        <div class="container">
+            <div class="row">
+                <div class="card-deck" id="accessory">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class="col-sm-6 col-md col-sm-6 col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Contact </h5>
+                    <p><i class="fa fa-location-arrow"></i> 1435 boulevard Cambronne, Campus Inovia, 60400 Noyon </p>
+                    <p><i class="fa fa-phone"></i>  03.21.42.13.37  </p>
+                    <p><i class="fa fa fa-envelope"></i> info@toutpourletoutou.com</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="p-0 col-lg-12">
+                    <div class="map-container-6">
+                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=15+Springfield+Way,+Hythe,+CT21+5SH&aq=t&sll=52.8382,-2.327815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">A propos de nous</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Tarification</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p class="text-center">Copyright @2019 | Designed With by <a href="#">ToutPourLeToutou</a></p>
+        </div>
+    </footer>
+    <!-- Modal: modalCart -->
+    <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modalDecor">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="modal-title" id="myModalLabel">Votre panier</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body bodyDecor">
+                    <table class="table table-hover" id="productCard">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th></th>
+                                <th>Nom du produit</th>
+                                <th>Quantité</th>
+                                <th>Prix / U</th>
+                                <th>Suppr</th>
+                            </tr>
+                        </thead>
+                        <tbody id="addProductTable"></tbody>
+                    </table>
+
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <div class="textTotal">
+                        Total: <span id="totalPriceCommand">0€</span>
+                    </div>
+                    <button type="button" class="btn btn-outline buttonColor" data-dismiss="modal">Fermer</button>
+                    <button class="btn buttonColor2">Paiement</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/toastr.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/script1.js"></script>
+</body>
+</html>

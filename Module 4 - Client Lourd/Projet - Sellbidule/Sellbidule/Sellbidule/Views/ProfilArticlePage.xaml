@@ -1,0 +1,65 @@
+﻿<Page x:Class="Sellbidule.Views.ProfilArticlePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sellbidule.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProfilArticlePage" Loaded="Page_Loaded">
+
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="50" />
+            <RowDefinition />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <!--Buttons category-->
+        <Button Grid.Column="1" Grid.Row="1" Content="Tous les articles" Margin="30,10"
+                x:Name="AllCategoryButton" Click="AllCategoryButton_Click" Background="YellowGreen"/>
+        <Button Grid.Column="2" Grid.Row="1" Content="Nature" Margin="30,10"
+                x:Name="NatureCategoryButton" Click="NatureCategoryButton_Click" Background="YellowGreen"/>
+        <Button Grid.Column="3" Grid.Row="1" Content="Maison" Margin="30,10"
+                x:Name="HouseCategoryButton" Click="HouseCategoryButton_Click" Background="YellowGreen"/>
+        <Button Grid.Column="4" Grid.Row="1" Content="Informatique" Margin="30,10"
+                x:Name="ComputerHardwareButton" Click="ComputerHardwareButton_Click" Background="YellowGreen"/>
+
+        <!--Tittle-->
+        <TextBlock x:Name="CategoryTittleTextBlock" Grid.ColumnSpan="6" VerticalAlignment="Top"
+                    TextAlignment="Center" FontSize="28" Text="Tous nos articles" Background="#4FC031" Height="40" Foreground="GhostWhite" FontWeight="Bold"/>
+
+        <ListBox x:Name="ListBox_Article" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="2" ItemsSource="{Binding}" FontSize="20">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <Image Source="{Binding fullPicture}" Width="170" Height="170" Margin="0,0,10,0"/>
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Text="{Binding name}" FontWeight="Bold" FontSize="25"/>
+                            <TextBlock Text="{Binding description}" FontSize="18" />
+                            <WrapPanel>
+                                <TextBlock Text="{Binding price}" />
+                                <TextBlock Text=" €" />
+                            </WrapPanel>
+                            <WrapPanel>
+                                <TextBlock Text="Réf : " />
+                                <TextBlock Text="{Binding reference}" />
+                            </WrapPanel>
+                        </StackPanel>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Page>

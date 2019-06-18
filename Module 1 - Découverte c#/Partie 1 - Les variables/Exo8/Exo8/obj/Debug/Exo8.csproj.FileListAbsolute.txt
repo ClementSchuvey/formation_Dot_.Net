@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\Exo8\Exo8\bin\Debug\Exo8.exe.config
+C:\Users\Dell\source\repos\Exo8\Exo8\bin\Debug\Exo8.exe
+C:\Users\Dell\source\repos\Exo8\Exo8\bin\Debug\Exo8.pdb
+C:\Users\Dell\source\repos\Exo8\Exo8\obj\Debug\Exo8.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\Exo8\Exo8\obj\Debug\Exo8.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Exo8\Exo8\obj\Debug\Exo8.exe
+C:\Users\Dell\source\repos\Exo8\Exo8\obj\Debug\Exo8.pdb

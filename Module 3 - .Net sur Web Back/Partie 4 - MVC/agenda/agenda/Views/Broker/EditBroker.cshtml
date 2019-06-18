@@ -1,0 +1,49 @@
+﻿@model agenda.Models.brokers
+@{
+    ViewBag.Title = "Modifier courtier";
+}
+<div class="container backgroundWhite mt-3 p-3">
+    @* Titre du formulaire *@
+    <div class="row">
+        <div class="col-12">
+            <p class="titleForm text-white backgroundGreen p-2">Modifier le courtier</p>
+        </div>
+    </div>
+    @* Formulaire de modification du courtier*@
+    <div class="row">
+        <form class="col-12 pr-4 pl-4 font-weight-bold" action="@Url.Action("EditBroker", "Broker")" method="post">
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-4">
+                    @Html.LabelFor(model => model.firstName)
+                    @Html.EditorFor(model => model.firstName, new { htmlAttributes = new { @class = "form-control", @id = "firstNameBroker", @placeholder = "Prénom" } })
+                    @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 col-lg-6 mb-4">
+                    @Html.LabelFor(model => model.lastName)
+                    @Html.EditorFor(model => model.lastName, new { htmlAttributes = new { @class = "form-control", @id = "lastNameBroker", @placeholder = "Nom" } })
+                    @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 mb-4">
+                    @Html.LabelFor(model => model.mail)
+                    @Html.EditorFor(model => model.mail, new { htmlAttributes = new { @class = "form-control", @id = "phoneNumberBroker", @placeholder = "Adresse mail" } })
+                    @Html.ValidationMessageFor(model => model.mail, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 mb-4">
+                    @Html.LabelFor(model => model.phoneNumber)
+                    @Html.EditorFor(model => model.phoneNumber, new { htmlAttributes = new { @class = "form-control", @id = "phoneNumberBroker", @placeholder = "Numéro de téléphone" } })
+                    @Html.ValidationMessageFor(model => model.phoneNumber, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <button type="submit" class="btn mx-auto buttonForm backgroundGreen">Modifier le profil</button>
+        </form>
+    </div>
+    <div class="row mt-2">
+        <div class="col-12">
+            <a class="backgroundGreen p-2 ml-1" href="@Url.Action("ProfilBroker", "Broker", new { Model.id }, null)" title="Retour au profil">
+                <i class="far fa-id-card classForIcone"></i>
+                <span class="text-white">Profil du courtier</span>
+            </a>
+        </div>
+    </div>
+</div>

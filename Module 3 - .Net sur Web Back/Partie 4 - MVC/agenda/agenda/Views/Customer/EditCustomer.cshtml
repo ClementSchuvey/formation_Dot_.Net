@@ -1,0 +1,56 @@
+﻿@model agenda.Models.customers
+
+@{
+    ViewBag.Title = "Modifier le Profil";
+}
+
+<div class="container backgroundWhite mt-3 p-3">
+    @* Titre du formulaire *@
+    <div class="row">
+        <div class="col-12">
+            <p class="titleForm text-white backgroundGreen p-2">Modifier le client</p>
+        </div>
+    </div>
+    @* Formulaire de modification du client*@
+    <div class="row">
+        <form class="col-12 pr-4 pl-4 font-weight-bold" action="@Url.Action("EditCustomer", "Customer")" method="post">
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-4">
+                    @Html.LabelFor(model => model.firstName)
+                    @Html.EditorFor(model => model.firstName, new { htmlAttributes = new { @class = "form-control inputAddCustomer", @placeholder = "Prénom" } })
+                    @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 col-lg-6 mb-4">
+                    @Html.LabelFor(model => model.lastName)
+                    @Html.EditorFor(model => model.lastName, new { htmlAttributes = new { @class = "form-control inputAddCustomer", @placeholder = "Nom" } })
+                    @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 mb-4">
+                    @Html.LabelFor(model => model.mail)
+                    @Html.EditorFor(model => model.mail, new { htmlAttributes = new { @class = "form-control inputAddCustomer", @placeholder = "exemple.test@gmail.com" } })
+                    @Html.ValidationMessageFor(model => model.mail, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 mb-4">
+                    @Html.LabelFor(model => model.phoneNumber)
+                    @Html.EditorFor(model => model.phoneNumber, new { htmlAttributes = new { @class = "form-control inputAddCustomer", @placeholder = "0123456789" } })
+                    @Html.ValidationMessageFor(model => model.phoneNumber, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 mb-4">
+                    @Html.LabelFor(model => model.budget)
+                    @Html.EditorFor(model => model.budget, new { htmlAttributes = new { @class = "form-control inputAddCustomer", @placeholder = "1500" } })
+                    @Html.ValidationMessageFor(model => model.budget, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <button type="submit" class="btn mx-auto buttonForm backgroundGreen">Modifier le client</button>
+        </form>
+    </div>
+    <div class="row mt-2">
+        <div class="col-12">
+            <a class="backgroundGreen p-2 ml-1" href="@Url.Action("profilCustomer", "customer", new { Model.id }, null)" title="Retour au profil">
+                <i class="far fa-id-card classForIcone"></i>
+                <span class="text-white">Profil du client</span>
+            </a>
+        </div>
+    </div>
+</div>

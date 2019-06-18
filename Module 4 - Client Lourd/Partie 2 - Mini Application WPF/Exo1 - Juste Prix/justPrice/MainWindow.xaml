@@ -1,0 +1,92 @@
+﻿<Window x:Class="justPrice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:justPrice"
+        mc:Ignorable="d"
+        Title="Juste Prix" Height="600" Width="1000" MaxHeight="600" MaxWidth="1000" MinHeight="600" MinWidth="1000" Icon="Pictures/WindowsIcon.ico" >
+    <Grid Width="982">
+        <Image gif:ImageBehavior.AnimatedSource="Pictures/Background.jpg" />
+        <!-- ____________ACCUEIL_____________ -->
+        <StackPanel x:Name="StackPanel_Home"  Grid.ColumnSpan="2">
+            <Grid Height="570">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="8*"/>
+                    <RowDefinition Height="19*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Juste Prix" TextAlignment="Center" Background="LightSeaGreen" Foreground="GhostWhite" Grid.Row="1" FontSize="130" LineHeight="36" />
+                <Button x:Name="Button_Play" Click="Button_Play_Click" Content="JOUER" Grid.Row="1" Style="{StaticResource Button_Play}" Margin="0,192,0,0" Grid.RowSpan="2"/>
+            </Grid>
+        </StackPanel>
+        <!-- ____________CHOIX DIFFICULTER_____________ -->
+        <StackPanel x:Name="StackPanel_ChoiceDifficulty" Visibility="Hidden" Grid.ColumnSpan="2">
+            <Grid Height="570">
+                <TextBlock Text="Choisir la difficulté" Margin="0,0,0,502" FontSize="50" TextAlignment="Center" Foreground="GhostWhite" FontWeight="Bold" Background="LightSeaGreen"/>
+                <Button x:Name="Button_DifficultyEasy" Click="Button_DifficultyChoice_Click" Tag="1" Content="Facile" Margin="10,134,815,375" Style="{StaticResource Button_Validate}"/>
+                <Button x:Name="Button_DifficultyNormal" Click="Button_DifficultyChoice_Click" Tag="2" Content="Normal" Margin="172,134,653,375" Style="{StaticResource Button_Validate}"/>
+                <Button x:Name="Button_DifficultyHard" Click="Button_DifficultyChoice_Click" Tag="3" Content="Difficile" Margin="334,134,491,375" Style="{StaticResource Button_Validate}"/>
+                <Button x:Name="Button_DifficultyExtrem" Click="Button_DifficultyChoice_Click" Tag="4" Content="Extrême" Margin="496,134,329,375" Style="{StaticResource Button_Validate}"/>
+                <Button x:Name="Button_DifficultyLucky" Click="Button_DifficultyChoice_Click" Tag="5" Content="Chanceux" Margin="658,133,167,375" Style="{StaticResource Button_Validate}"/>
+                <Button x:Name="Button_DifficultyCustom" Click="Button_DifficultyChoice_Click" Tag="6" Content="Personnalié" Margin="820,134,10,374" Style="{StaticResource Button_Validate}"/>
+                <TextBlock x:Name="TextBlock_NameDifficultyChoice" FontSize="45" Margin="0,217,10,283" TextAlignment="Center" FontWeight="Bold"/>
+                <TextBlock Text="Nombre d'essais" FontSize="30" Margin="0,287,10,233" TextAlignment="Center"/>
+                <TextBlock x:Name="TextBlock_NumberTryChoice" Text="0" FontSize="30" Margin="10,329,10,191" TextAlignment="Center"/>
+                <TextBox x:Name="TextBox_NumberTryChoice" Visibility="Hidden" Text="0" FontSize="30" Margin="10,329,10,191" TextAlignment="Center"/>
+                <TextBlock Text="Prix comprit entre 1 et " FontSize="30" Margin="10,384,10,136" TextAlignment="Center"/>
+                <TextBlock x:Name="TextBlock_MaxPriceChoice" Text="0" FontSize="30" Margin="10,425,10,95" TextAlignment="Center"/>
+                <TextBox x:Name="TextBox_MaxPriceChoice" Visibility="Hidden" Text="0" FontSize="30" TextAlignment="Center" Margin="10,422,10,98"/>
+                <Button x:Name="Button_ValidateChoiceDificulty" Click="Button_ValidateChoiceDificulty_Click" Content="Valider" Style="{StaticResource Button_Validate}" Margin="300,472,300,42" />
+                <TextBlock x:Name="TextBlock_ErrorChoiceDiffictulty" Margin="10,528,10,0" TextAlignment="Center" FontSize="25" Foreground="Crimson"/>
+            </Grid>
+        </StackPanel>
+        <!-- ____________JEUX_____________ -->
+        <StackPanel x:Name="StackPanel_Game" Visibility="Hidden">
+            <Grid Height="570">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <!-- ________________PANNEAUX DONNEES DE LA PARTIE_______________ -->
+                <Rectangle Grid.Column="1" Fill="LightSeaGreen"/>
+                <Border Background="Teal" HorizontalAlignment="Left" Height="570" Margin="726,0,0,0" VerticalAlignment="Top" Width="11" Grid.ColumnSpan="2"/>
+                <StackPanel Margin="10,10,10,480" Grid.Column="1">
+                    <TextBlock Text="VICTOIRE" Foreground="GhostWhite" FontSize="25" TextAlignment="Center" FontWeight="Bold"/>
+                    <TextBlock x:Name="TextBlock_NumberVictory" Text="0" Foreground="GhostWhite" FontSize="25" TextAlignment="Center" Margin="0,-10,0,0"/>
+                </StackPanel>
+                <StackPanel Margin="10,75,10,431" Grid.Column="1">
+                    <TextBlock Text="DEFAITE" Foreground="GhostWhite" FontSize="25" TextAlignment="Center" FontWeight="Bold"/>
+                    <TextBlock x:Name="TextBlock_NumberDefeat" Text="0" Foreground="GhostWhite" FontSize="25" TextAlignment="Center" Margin="0,-10,0,0"/>
+                </StackPanel>
+                <Border  Background="GhostWhite" Margin="10,144,10,416" Grid.Column="1"/>
+                <StackPanel Margin="10,178,10,310" Grid.Column="1">
+                    <TextBlock Text="ESSAIS RESTANT" Foreground="GhostWhite" FontSize="25" TextAlignment="Center" FontWeight="Bold"/>
+                    <TextBlock x:Name="TextBlock_NumberTry"  Text="0" Foreground="GhostWhite" FontSize="30" TextAlignment="Center" Margin="0,-10,0,0"/>
+                </StackPanel>
+                <Button x:Name="Button_ChangeDifficulty" Click="Button_ChangeDifficulty_Click" Visibility="Hidden" Content="Changer la Difficulté" Grid.Column="1" Margin="10,455,10,65" Height="50" Style="{StaticResource Button_NewGame}"/>
+                <Button x:Name="Button_NewGame" Click="Button_NewGame_Click" Visibility="Hidden" Content="Rejouer" Grid.Column="1" Margin="10,510,10,10" Height="50" Style="{StaticResource Button_NewGame}"/>
+                <!-- ___________________ZONE DE SAISIE________________________ -->
+                <WrapPanel Margin="2,0,0,525">
+                    <TextBlock Text=" Indiquez un montant entre 1 et " Foreground="LightSeaGreen" FontSize="30" FontWeight="Bold"/>
+                    <TextBlock x:Name="TextBlock_MaxPriceDisplay"  Foreground="LightSeaGreen" FontSize="30" FontWeight="Bold"/>
+                    <TextBlock Text="€"  Foreground="LightSeaGreen" FontSize="30" FontWeight="Bold"/>
+                </WrapPanel>
+                <TextBox x:Name="TextBox_PriceEntry" TextWrapping="Wrap" Margin="200,44,200,480" FontSize="30" TextAlignment="Center"/>
+                <TextBlock x:Name="TextBlock_ErrorEntry" Margin="-5,90,5,446" TextAlignment="Center" Foreground="Crimson" FontSize="25"/>
+                <Button x:Name="Button_Validate" Click="Button_Validate_Click" Margin="250,124,250,397" Content="Valider" Style="{StaticResource Button_Validate}"/>
+                <!-- ___________________ZONE DE RESULTAT________________________ -->
+                <TextBlock x:Name="TextBlock_TextResultTry" Margin="0,178,0,296" TextAlignment="Center" FontSize="70" FontWeight="Bold" Foreground="LightSeaGreen"/>
+                <Image x:Name="Image_MorePrice" Visibility="Hidden" Source="Pictures/More.png" Margin="150,274,150,10"/>
+                <Image x:Name="Image_LessPrice" Visibility="Hidden" Source="Pictures/Less.png" Margin="150,274,150,10"/>
+                <TextBlock x:Name="TextBlock_TextVictoryOrDefeat" Visibility="Hidden" TextWrapping="Wrap" TextAlignment="Center" FontSize="70" FontWeight="Bold" Foreground="LightSeaGreen" Margin="200,274,200,-14"/>
+                <Image x:Name="Image_CupOne" Visibility="Hidden" Source="Pictures/VictoryCup.png" Margin="0,218,406,0"/>
+                <Image x:Name="Image_CupTwo" Visibility="Hidden" Source="Pictures/victoryCup.png" Margin="406,218,0,0"/>
+                <Image x:Name="Image_DefeatOne" Visibility="Hidden" Source="Pictures/LostLogo.png" Margin="541,284,45,10"/>
+                <Image x:Name="Image_DefeatTwo" Visibility="Hidden" Source="Pictures/LostLogo.png" Margin="45,284,541,10"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

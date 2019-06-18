@@ -1,0 +1,48 @@
+﻿div{
+    float:left
+}
+#one {
+    height: 50px;
+    width: 75%;
+    background-color: #2ecc71;
+}
+#two {
+    height: 50px;
+    width: 25%;
+    background-color: #2980b9;
+}
+#three {
+    height: 100px;
+    width: 34%;
+    background-color: #e74c3c;
+}
+#four {
+    height: 50px;
+    width: 33%;
+    background-color: #e67e22;
+}
+#five {
+    height: 50px;
+    width: 33%;
+    background-color: #95a5a6;
+}
+#six {
+    height: 50px;
+    width: 22%;
+    background-color: #f39c12;
+}
+#seven {
+    height: 50px;
+    width: 22%;
+    background-color: #16a085;
+}
+#eight {
+    height: 50px;
+    width: 22%;
+    background-color: #d35400;
+}
+#nine {
+    height: 150px;
+    width: 100%;
+    background-color: #2c3e50;
+}

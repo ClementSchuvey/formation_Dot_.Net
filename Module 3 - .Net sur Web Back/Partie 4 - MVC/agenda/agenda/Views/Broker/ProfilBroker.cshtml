@@ -1,0 +1,44 @@
+﻿@model agenda.Models.brokers
+@{
+    ViewBag.Title = "Profil Courtier";
+}
+
+<div class="container mt-5">
+    @* Données du profil *@
+    <div class="row">
+        <div class="col-12 col-lg-6 p-4 backgroundWhite">
+            <p class="backgroundGreen p-3 text-white text-size-20 font-weight-bold">
+                @Html.DisplayFor(model => model.completNameBroker)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.lastName):</span>
+                @Html.DisplayFor(model => model.lastName)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.firstName):</span>
+                @Html.DisplayFor(model => model.firstName)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.mail):</span>
+                @Html.DisplayFor(model => model.mail)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.phoneNumber):</span>
+                @Html.DisplayFor(model => model.phoneNumber)
+            </p>
+        </div>
+    </div>
+    @* Lien modification et retour à la liste *@
+    <div class="row mt-2">
+        <div class="col-12">
+            <a class="backgroundGreen p-2" href="@Url.Action("EditBroker", "Broker", new { id = Html.DisplayFor(model => model.id) }, null)" title="Modifier profil">
+                <i class="fas fa-user-edit classForIcone"></i>
+                <span class="text-white">Modifier le courtier</span>
+            </a>
+            <a class="backgroundGreen p-2 ml-1" href="@Url.Action("ListBroker", "Broker", new { @class = "nav-link pt-3" })" title="Retour à la liste des courtiers">
+                <i class="fas fa-list classForIcone"></i>
+                <span class="text-white">Liste des courtiers</span>
+            </a>
+        </div>
+    </div>
+</div>

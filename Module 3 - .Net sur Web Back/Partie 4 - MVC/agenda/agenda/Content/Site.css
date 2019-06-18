@@ -1,0 +1,83 @@
+﻿#body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+.backgroundGreen {
+    background-color: #4fc031;
+}
+.backgroundWhite {
+    background-color: rgba(235,235,235, 0.9);
+}
+.backgroundBlack {
+    background-color: #333333;
+}
+.text-size-20{
+    font-size:20px;
+}
+#backgroundPicture{
+    z-index:-1;
+}
+
+.classForIcone {
+    color: white;
+}
+    .classForIcone:hover {
+        color: #333333;
+    }
+
+.ElementNav > a {
+    color: white;
+}
+    .ElementNav > a:hover {
+        box-shadow: inset  0 5px #333333;
+        color: #333333;
+    }
+
+.paginationLink > div > ul > li {
+    margin-right: 5px;
+}
+    .paginationLink > div > ul > li > a {
+        color: #333333;
+    }
+.paginationLink > div > ul > .active {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#searchAppointment > label {
+    font-size: 25px;
+    color: #333333
+}
+#searchAppointment > input {
+    border: 0px;
+    background-color: #EBEBEB;
+    font-size: 25px;
+    color: #333333
+}
+    #searchAppointment > input:focus {
+        border: 0px;
+        box-shadow: none;
+        
+    }
+
+.titleForm {
+    font-size:30px;
+}
+.buttonForm {
+    display: block;
+    color:white;
+}
+    .buttonForm:hover {
+        color:#333333;
+        opacity:0.8;
+    }
+
+.titleError404{
+    font-size:30px;
+}
+.texteError404 {
+    font-size: 20px;
+}
+
+

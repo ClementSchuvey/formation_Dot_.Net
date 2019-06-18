@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="diaryModelStoreContainer" CdmEntityContainer="diaryEntities">
+    <EntitySetMapping Name="appointments">
+      <EntityTypeMapping TypeName="diaryModel.appointment">
+        <MappingFragment StoreEntitySet="appointments">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="dateHour" ColumnName="dateHour" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="id_brokers" ColumnName="id_brokers" />
+          <ScalarProperty Name="id_customers" ColumnName="id_customers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="brokers">
+      <EntityTypeMapping TypeName="diaryModel.broker">
+        <MappingFragment StoreEntitySet="brokers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="diaryModel.customer">
+        <MappingFragment StoreEntitySet="customers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+          <ScalarProperty Name="budget" ColumnName="budget" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,14 @@
+C:\Users\Dell\source\repos\Exo5\Exo5\obj\Debug\Exo5.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\Exo5\Exo5\obj\Debug\Exo5.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Exo5\Exo5\bin\Debug\Exo5.exe.config
+C:\Users\Dell\source\repos\Exo5\Exo5\bin\Debug\Exo5.exe
+C:\Users\Dell\source\repos\Exo5\Exo5\bin\Debug\Exo5.pdb
+C:\Users\Dell\source\repos\Exo5\Exo5\obj\Debug\Exo5.exe
+C:\Users\Dell\source\repos\Exo5\Exo5\obj\Debug\Exo5.pdb
+C:\Users\Dell\Desktop\Partie 1\Exo5\Exo5\bin\Debug\Exo5.exe.config
+C:\Users\Dell\Desktop\Partie 1\Exo5\Exo5\bin\Debug\Exo5.exe
+C:\Users\Dell\Desktop\Partie 1\Exo5\Exo5\bin\Debug\Exo5.pdb
+C:\Users\Dell\Desktop\Partie 1\Exo5\Exo5\obj\Debug\Exo5.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\Partie 1\Exo5\Exo5\obj\Debug\Exo5.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Partie 1\Exo5\Exo5\obj\Debug\Exo5.exe
+C:\Users\Dell\Desktop\Partie 1\Exo5\Exo5\obj\Debug\Exo5.pdb

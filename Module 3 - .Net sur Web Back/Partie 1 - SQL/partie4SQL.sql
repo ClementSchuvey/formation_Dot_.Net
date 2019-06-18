@@ -1,0 +1,15 @@
+--Exo 1:
+--INSERT INTO [dbo].[languages] (language, version)
+-- VALUES
+-- ('JavaScript', 'version 5'),
+-- ('PHP', 'version 5.2'),
+-- ('PHP', 'version 5.4'),
+-- ('HTML', 'version 5.1'),
+-- ('JavaScript', 'version 6'),
+-- ('JavaScript', 'version 7'),
+-- ('JavaScript', 'version 8'),
+-- ('PHP', 'version 7');
+-- GO
+ 
+--Exo 2:
+--Clique droit sur notre table et modifier les 200 premiere ligne puis on met les bonnes valeurs

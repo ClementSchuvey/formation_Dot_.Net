@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\TP2_Sans_modifications\TP2_Sans_modifications\bin\Debug\TP2_Sans_modifications.exe.config
+C:\Users\Dell\source\repos\TP2_Sans_modifications\TP2_Sans_modifications\bin\Debug\TP2_Sans_modifications.exe
+C:\Users\Dell\source\repos\TP2_Sans_modifications\TP2_Sans_modifications\bin\Debug\TP2_Sans_modifications.pdb
+C:\Users\Dell\source\repos\TP2_Sans_modifications\TP2_Sans_modifications\obj\Debug\TP2_Sans_modifications.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\TP2_Sans_modifications\TP2_Sans_modifications\obj\Debug\TP2_Sans_modifications.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\TP2_Sans_modifications\TP2_Sans_modifications\obj\Debug\TP2_Sans_modifications.exe
+C:\Users\Dell\source\repos\TP2_Sans_modifications\TP2_Sans_modifications\obj\Debug\TP2_Sans_modifications.pdb

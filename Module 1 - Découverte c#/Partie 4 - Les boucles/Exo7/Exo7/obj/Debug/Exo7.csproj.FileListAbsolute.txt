@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\Exo7\Exo7\bin\Debug\Exo7.exe.config
+C:\Users\Dell\source\repos\Exo7\Exo7\bin\Debug\Exo7.exe
+C:\Users\Dell\source\repos\Exo7\Exo7\bin\Debug\Exo7.pdb
+C:\Users\Dell\source\repos\Exo7\Exo7\obj\Debug\Exo7.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Exo7\Exo7\obj\Debug\Exo7.exe
+C:\Users\Dell\source\repos\Exo7\Exo7\obj\Debug\Exo7.pdb

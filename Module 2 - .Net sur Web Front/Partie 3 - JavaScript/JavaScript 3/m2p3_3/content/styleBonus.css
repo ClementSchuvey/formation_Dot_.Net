@@ -1,0 +1,17 @@
+﻿body{
+    font-family:'Comic Sans MS';
+}
+#youNotBisex {
+    color: #00FFFF;
+    background-color: #FF0000;
+    font-size: 160px;
+    display: none;
+    width: 100%;
+}
+#youAreBisex {
+    color: #FF00FF;
+    background-color: #00FF00;
+    font-size: 160px;
+    display: none;
+    width: 100%;
+}

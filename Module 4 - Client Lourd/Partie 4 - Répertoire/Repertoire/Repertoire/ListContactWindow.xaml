@@ -1,0 +1,45 @@
+﻿<Window x:Class="Repertoire.ListContactWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Repertoire"
+        mc:Ignorable="d"
+        Title="Liste contacts" Height="450" Width="800" MaxWidth="800" MinHeight="450" MinWidth="800">
+    <Window.Background>
+        <ImageBrush ImageSource="Pictures/background.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="21*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="1" Fill="#EBEBEBEE" Grid.ColumnSpan="4" Margin="0,10" Grid.RowSpan="8"/>
+        <!-- Titre -->
+        <TextBlock Text="Liste des contacts" Foreground="GhostWhite" Background="#4fc031" FontWeight="Bold" FontSize="28" TextAlignment="Center" Margin="10,0" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1"/>
+        <DataGrid x:Name="listContactDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="10,10,10,0" Grid.RowSpan="4" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Height="283" VerticalAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Lastname}" Header="Nom" Width="SizeToCells"/>
+                <DataGridTextColumn Binding="{Binding Firstname}" Header="Prénom" Width="SizeToCells"/>
+                <DataGridTextColumn Binding="{Binding Mail}" Header="Mail" Width="SizeToCells"/>
+                <DataGridTextColumn Binding="{Binding PhoneNumber}" Header="N° Tel" Width="SizeToCells"/>
+                <DataGridTextColumn Binding="{Binding Address}" Header="Adress" Width="SizeToCells"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Retour au profil" Click="Button_RetunProfil_Click" Background="#4fc031" FontWeight="Bold" FontSize="15" Grid.Row="6" Grid.Column="4" Margin="10,0"/>
+    </Grid>
+</Window>

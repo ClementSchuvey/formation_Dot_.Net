@@ -1,0 +1,42 @@
+﻿@model agenda.Models.brokers
+@{
+    ViewBag.Title = "Ajouter un Courtier";
+}
+<div class="container backgroundWhite mt-3 p-3">
+    @* Titre du formulaire *@
+    <div class="row">
+        <div class="col-12">
+            <p class="titleForm text-white backgroundGreen p-2">Ajouter un courtier</p>
+        </div>
+    </div>
+    @* Formulaire d'ajout du courtier*@
+    <div class="row">
+        <form class="col-12 pr-4 pl-4 font-weight-bold" action="@Url.Action("AddBroker", "Broker")" method="post">
+            @Html.AntiForgeryToken()@*Pour Eviter les injections de code*@
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-4">
+                    @* "LabelFor" crée une balise label, "EditorFor" crée une balise input et "ValidationMessageFor" crée une balise spans *@
+                    @Html.LabelFor(model => model.firstName)
+                    @Html.EditorFor(model => model.firstName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Prénom" } })
+                    @Html.ValidationMessageFor(model => model.firstName, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 col-lg-6 mb-4">
+                    @Html.LabelFor(model => model.lastName)
+                    @Html.EditorFor(model => model.lastName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Nom" } })
+                    @Html.ValidationMessageFor(model => model.lastName, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 mb-4">
+                    @Html.LabelFor(model => model.mail)
+                    @Html.EditorFor(model => model.mail, new { htmlAttributes = new { @class = "form-control", @placeholder = "exemple.test@gmail.com" } })
+                    @Html.ValidationMessageFor(model => model.mail, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-12 mb-4">
+                    @Html.LabelFor(model => model.phoneNumber)
+                    @Html.EditorFor(model => model.phoneNumber, new { htmlAttributes = new { @class = "form-control", @placeholder = "0123456789" } })
+                    @Html.ValidationMessageFor(model => model.phoneNumber, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <button type="submit" class="btn mx-auto buttonForm backgroundGreen">Ajouter le courtier</button>
+        </form>
+    </div>
+</div>

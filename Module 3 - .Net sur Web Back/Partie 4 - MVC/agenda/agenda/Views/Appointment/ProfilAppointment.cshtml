@@ -1,0 +1,89 @@
+﻿@model agenda.Models.appointments
+
+@{
+    ViewBag.Title = "Profil rendez-vous ";
+}
+<div class="container mt-5">
+    @* Données du profil *@
+    <div class="row">
+        <div class="col-12 p-4 mb-3 backgroundGreen text-center text-white font-weight-bold text-size-20">
+            Rendez-vous du @Html.DisplayFor(model => model.date) à @Html.DisplayFor(model => model.hour)H
+        </div>
+        <div class="col-12 col-lg-5 p-2 backgroundWhite">
+            <p class="backgroundGreen p-1 text-white text-size-20 font-weight-bold">
+                Client
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.customers.lastName):</span>
+                @Html.DisplayFor(model => model.customers.lastName)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.customers.firstName):</span>
+                @Html.DisplayFor(model => model.customers.firstName)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.customers.mail):</span>
+                @Html.DisplayFor(model => model.customers.mail)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.customers.phoneNumber):</span>
+                @Html.DisplayFor(model => model.customers.phoneNumber)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.customers.budget):</span>
+                @Html.DisplayFor(model => model.customers.budget)
+            </p>
+            <a class="backgroundGreen p-2 float-right" href="@Url.Action("EditCustomer", "Customer", new { id = Html.DisplayFor(model => model.customers.id) }, null)" title="Modifier le client">
+                <i class="fas fa-user-edit classForIcone"></i>
+                <span class="text-white">Modifier le client</span>
+            </a>
+        </div>
+        <div class="col-12 col-lg-5 offset-lg-2 p-2 backgroundWhite">
+            <p class="backgroundGreen p-1 text-white text-size-20 font-weight-bold">
+                Courtier
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.brokers.lastName):</span>
+                @Html.DisplayFor(model => model.brokers.lastName)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.brokers.firstName):</span>
+                @Html.DisplayFor(model => model.brokers.firstName)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.brokers.mail):</span>
+                @Html.DisplayFor(model => model.brokers.mail)
+            </p>
+            <p>
+                <span class="font-weight-bold">@Html.DisplayNameFor(model => model.brokers.phoneNumber):</span>
+                @Html.DisplayFor(model => model.brokers.phoneNumber)
+            </p>
+            <p>&nbsp;</p>
+            <a class="backgroundGreen p-2 float-right" href="@Url.Action("EditBroker", "Broker", new { id = Html.DisplayFor(model => model.brokers.id) }, null)" title="Modifier le courtier">
+                <i class="fas fa-user-edit classForIcone"></i>
+                <span class="text-white">Modifier le courtier</span>
+            </a>
+        </div>
+        <div class="col-12 p-1 mt-3 backgroundWhite text-center">
+            <p class="backgroundGreen p-1 text-white text-size-20 font-weight-bold">
+                Sujet
+            </p>
+            <p>
+                @Html.DisplayFor(model => model.subject)
+            </p>
+        </div>
+    </div>
+    @* Lien modification et retour à la liste *@
+    <div class="row mt-2">
+        <div class="col-12">
+            <a class="backgroundGreen p-2" href="@Url.Action("EditAppointment", "Appointment", new { id = Html.DisplayFor(model => model.id) })" title="Modifier profil">
+                <i class="fas fa-user-edit classForIcone"></i>
+                <span class="text-white">Modifier le RDV</span>
+            </a>
+            <a class="backgroundGreen p-2 ml-1" href="@Url.Action("Index", "Home")" title="Retour à la liste des RDV">
+                <i class="fas fa-list classForIcone"></i>
+                <span class="text-white">Liste des RDV</span>
+            </a>
+        </div>
+    </div>
+</div>

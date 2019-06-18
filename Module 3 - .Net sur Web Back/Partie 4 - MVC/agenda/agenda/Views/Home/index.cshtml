@@ -1,0 +1,81 @@
+﻿@model PagedList.IPagedList<agenda.Models.appointments>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Accueil";
+}
+
+<div class="container backgroundWhite mt-3 p-3">
+    @* Formulaire de recherche de RDV part date. Il est fait à l'aide de Tempus Dominus*@
+    <div class="row m-0">
+        <form class="col-12" action="#" method="post" id="formSearchAppointment">
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <div class="input-group date" id="searchAppointment" data-target-input="nearest">
+                            <label for="searchAppointment" class="m-0">Rendez-vous du</label>
+                            <input type="text" class="form-control datetimepicker-input p-0 pl-1 h-auto" data-target="#searchAppointment" name="searchAppointment" value="@DateTime.Now" />
+                            <div class="input-group-append" data-target="#searchAppointment" data-toggle="datetimepicker">
+                                <div class="btn btn-outline-secondary"><i class="fa fa-calendar"></i></div>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">Recherche</button>
+                                <a class="btn btn-outline-secondary" href="@Url.Action("index","Home")" title="Annuler la recherche">X</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    @*On affiche le nom des attributs de mon model*@
+    <div class="row backgroundBlack text-center text-white font-weight-bold m-0">
+        <div class="col-12 col-lg-3 p-0">
+            <p class="mt-2 mb-2 border-right">Date</p>
+        </div>
+        <div class="col-12 col-lg-2 p-0">
+            <p class="mt-2 mb-2 border-right">Heure</p>
+        </div>
+        <div class="col-12 col-lg-3 p-0">
+            <p class="mt-2 mb-2 border-right">Courtier</p>
+        </div>
+        <div class="col-12 col-lg-3 p-0">
+            <p class="mt-2 mb-2 border-right">Client</p>
+        </div>
+    </div>
+    @*On parcourt notre Model énumèré.A chaque élément parcourut nous créons une ligne qui indique La date l'heur et le Nom du courtier et client*@
+    @foreach (var item in Model)
+    {
+        <div class="row mt-1 ml-0 mr-0 text-center backgroundGreen text-white">
+            <div class="col-6 col-lg-3 p-0 text-right text-lg-center">
+                <p class="mt-2 mb-2 border-right">@item.date</p>
+            </div>
+            <div class="col-6 col-lg-2 p-0">
+                <p class="mt-2 mb-2 border-right">@item.hour H</p>
+            </div>
+            <div class="col-12 col-lg-3 p-0">
+                <p class="mt-2 mb-2 border-right">@item.brokers.lastName</p>
+            </div>
+            <div class="col-12 col-lg-3 p-0">
+                <p class="mt-2 mb-2 border-right">@item.customers.lastName</p>
+            </div>
+            <div class="col-6 col-lg-1 text-right text-lg-center">
+                <a href="@Url.Action("ProfilAppointment", "Appointment", new { id = item.id }, null)" title="Profil du RDV">
+                    <i class="far fa-id-card classForIcone"></i>
+                </a>
+                <a href="@Url.Action("DeleteAppointment", "Home", new { id = item.id }, null)" title="Supprimer le RDV" class="confirmDelete">
+                    <i class="fas fa-ban classForIcone"></i>
+                </a>
+            </div>
+        </div>
+    }
+    @*Pagination *@
+    <div class="row text-size-20">
+        <div class="col-6 text-right paginationLink">
+            @Html.PagedListPager(Model, page => Url.Action("index", new { @class = "", page,}))
+        </div>
+        <div class="col-6 text-right">
+            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+        </div>
+    </div>
+</div>

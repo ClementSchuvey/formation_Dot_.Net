@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="content/style.css" rel="stylesheet" />
+    <title>Exercice 4</title>
+</head>
+<body>
+    <div>
+        <p><a href="index.html">Retour à la liste des exercices</a></p>
+    </div>
+    <form>
+        <div>
+            <label for="lastname">Nom : </label>
+            <input type="text" name="lastname" id="lastname" />
+        </div>
+        <div>
+            <label for="firstname">Prénom : </label>
+            <input type="text" name="firstname" id="firstname" />
+        </div>
+        <div>
+            <label for="city">Ville : </label>
+            <input type="text" name="city" id="city" />
+        </div>
+        <div>
+            <!--grâce a l'événement onclick quand on click sur le boutton on lance la fonction dataUser()--> 
+            <input type="submit" name="submit" id="submit" value="valider" onclick="dataUser()" />
+        </div>
+    </form>
+    <!--balise javascriptscript-->
+    <script>
+        function dataUser() {
+            //On créé nos variable qui vont stocker la valeur de nos input
+            var lastName = document.getElementById('lastname').value;
+            var firstName = document.getElementById('firstname').value;
+            var city = document.getElementById('city').value;
+            var regexName = new RegExp(/^[A-Z]?[a-záàâäãåçéèêëíìîïñóòôöõúùûüýÿæœ]*([-']{1}[A-Za-záàâäãåçéèêëíìîïñóòôöõúùûüýÿæœ]+)*$/);
+            if (regexName.test(lastName)) {
+                if (regexName.test(firstName)) {
+                    if (regexName.test(city)) {
+                        //On affiche le tout dans une alert avec des /n pour un retour à la ligne
+                        alert("Nom: " + lastName + "\nPrénom: " + firstName + "\nVille: " + city);
+                    } else {
+                        alert("saisie de la ville incorrecte");
+                    }
+                } else {
+                    alert("saisie du prénom incorrecte");
+                }
+            } else {
+                alert("saisie du nom incorrecte");  
+            }
+
+
+
+        };
+    </script>
+</body>
+</html>

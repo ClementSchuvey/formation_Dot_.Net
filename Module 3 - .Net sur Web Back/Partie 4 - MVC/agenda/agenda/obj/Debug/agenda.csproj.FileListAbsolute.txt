@@ -1,0 +1,259 @@
+C:\www\Module 3\MVC\agenda\agenda\bin\agenda.dll.config
+C:\www\Module 3\MVC\agenda\agenda\bin\agenda.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\agenda.pdb
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\csc.exe
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\csc.exe.config
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\csc.rsp
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\csi.exe
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\csi.exe.config
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\csi.rsp
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.Managed.Core.targets
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.AppContext.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Collections.Immutable.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Console.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Globalization.Calendars.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.IO.Compression.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.IO.FileSystem.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Net.Http.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Net.Sockets.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Reflection.Metadata.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.ValueTuple.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Xml.XmlDocument.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Xml.XPath.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\vbc.exe
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\vbc.exe.config
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\vbc.rsp
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\VBCSCompiler.exe
+C:\www\Module 3\MVC\agenda\agenda\bin\roslyn\VBCSCompiler.exe.config
+C:\www\Module 3\MVC\agenda\agenda\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\Microsoft.Web.Infrastructure.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.Helpers.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.Mvc.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.Razor.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.WebPages.Deployment.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.WebPages.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.WebPages.Razor.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.Helpers.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.Mvc.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.Razor.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.WebPages.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.WebPages.Deployment.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\System.Web.WebPages.Razor.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\fr\System.Web.Helpers.resources.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\fr\System.Web.Mvc.resources.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\fr\System.Web.Razor.resources.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\fr\System.Web.WebPages.resources.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\www\Module 3\MVC\agenda\agenda\obj\Debug\agenda.csprojAssemblyReference.cache
+C:\www\Module 3\MVC\agenda\agenda\obj\Debug\agenda.csproj.CoreCompileInputs.cache
+C:\www\Module 3\MVC\agenda\agenda\obj\Debug\agenda.csproj.CopyComplete
+C:\www\Module 3\MVC\agenda\agenda\obj\Debug\agenda.dll
+C:\www\Module 3\MVC\agenda\agenda\obj\Debug\agenda.pdb
+C:\www\Module 3\MVC\agenda\agenda\bin\EntityFramework.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\EntityFramework.SqlServer.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\EntityFramework.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\EntityFramework.SqlServer.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\fr\EntityFramework.resources.dll
+C:\www\exo MVC\agenda\agenda\bin\agenda.dll.config
+C:\www\exo MVC\agenda\agenda\bin\agenda.dll
+C:\www\exo MVC\agenda\agenda\bin\agenda.pdb
+C:\www\exo MVC\agenda\agenda\bin\roslyn\csc.exe
+C:\www\exo MVC\agenda\agenda\bin\roslyn\csc.exe.config
+C:\www\exo MVC\agenda\agenda\bin\roslyn\csc.rsp
+C:\www\exo MVC\agenda\agenda\bin\roslyn\csi.exe
+C:\www\exo MVC\agenda\agenda\bin\roslyn\csi.exe.config
+C:\www\exo MVC\agenda\agenda\bin\roslyn\csi.rsp
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.Managed.Core.targets
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\www\exo MVC\agenda\agenda\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.AppContext.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Collections.Immutable.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Console.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Globalization.Calendars.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.IO.Compression.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.IO.FileSystem.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Net.Http.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Net.Sockets.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Reflection.Metadata.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.ValueTuple.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Xml.XmlDocument.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Xml.XPath.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\www\exo MVC\agenda\agenda\bin\roslyn\vbc.exe
+C:\www\exo MVC\agenda\agenda\bin\roslyn\vbc.exe.config
+C:\www\exo MVC\agenda\agenda\bin\roslyn\vbc.rsp
+C:\www\exo MVC\agenda\agenda\bin\roslyn\VBCSCompiler.exe
+C:\www\exo MVC\agenda\agenda\bin\roslyn\VBCSCompiler.exe.config
+C:\www\exo MVC\agenda\agenda\bin\EntityFramework.dll
+C:\www\exo MVC\agenda\agenda\bin\EntityFramework.SqlServer.dll
+C:\www\exo MVC\agenda\agenda\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\www\exo MVC\agenda\agenda\bin\Microsoft.Web.Infrastructure.dll
+C:\www\exo MVC\agenda\agenda\bin\System.Web.Helpers.dll
+C:\www\exo MVC\agenda\agenda\bin\System.Web.Mvc.dll
+C:\www\exo MVC\agenda\agenda\bin\System.Web.Razor.dll
+C:\www\exo MVC\agenda\agenda\bin\System.Web.WebPages.Deployment.dll
+C:\www\exo MVC\agenda\agenda\bin\System.Web.WebPages.dll
+C:\www\exo MVC\agenda\agenda\bin\System.Web.WebPages.Razor.dll
+C:\www\exo MVC\agenda\agenda\bin\EntityFramework.xml
+C:\www\exo MVC\agenda\agenda\bin\EntityFramework.SqlServer.xml
+C:\www\exo MVC\agenda\agenda\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\www\exo MVC\agenda\agenda\bin\System.Web.Helpers.xml
+C:\www\exo MVC\agenda\agenda\bin\System.Web.Mvc.xml
+C:\www\exo MVC\agenda\agenda\bin\System.Web.Razor.xml
+C:\www\exo MVC\agenda\agenda\bin\System.Web.WebPages.xml
+C:\www\exo MVC\agenda\agenda\bin\System.Web.WebPages.Deployment.xml
+C:\www\exo MVC\agenda\agenda\bin\System.Web.WebPages.Razor.xml
+C:\www\exo MVC\agenda\agenda\bin\fr\EntityFramework.resources.dll
+C:\www\exo MVC\agenda\agenda\bin\fr\System.Web.Helpers.resources.dll
+C:\www\exo MVC\agenda\agenda\bin\fr\System.Web.Mvc.resources.dll
+C:\www\exo MVC\agenda\agenda\bin\fr\System.Web.Razor.resources.dll
+C:\www\exo MVC\agenda\agenda\bin\fr\System.Web.WebPages.resources.dll
+C:\www\exo MVC\agenda\agenda\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\www\exo MVC\agenda\agenda\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\www\exo MVC\agenda\agenda\obj\Debug\agenda.csprojAssemblyReference.cache
+C:\www\exo MVC\agenda\agenda\obj\Debug\agenda.csproj.CoreCompileInputs.cache
+C:\www\exo MVC\agenda\agenda\obj\Debug\agenda.csproj.CopyComplete
+C:\www\exo MVC\agenda\agenda\obj\Debug\agenda.dll
+C:\www\exo MVC\agenda\agenda\obj\Debug\agenda.pdb
+C:\www\Module 3\MVC\agenda\agenda\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\PagedList.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\PagedList.Mvc.dll
+C:\www\Module 3\MVC\agenda\agenda\bin\PagedList.xml
+C:\www\Module 3\MVC\agenda\agenda\bin\PagedList.Mvc.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\agenda.dll.config
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\agenda.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\agenda.pdb
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\csc.exe
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\csc.exe.config
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\csc.rsp
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\csi.exe
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\csi.exe.config
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\csi.rsp
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.Managed.Core.targets
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.AppContext.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Collections.Immutable.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Console.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Globalization.Calendars.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.IO.Compression.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.IO.FileSystem.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Net.Http.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Net.Sockets.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Reflection.Metadata.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.ValueTuple.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Xml.XmlDocument.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Xml.XPath.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\vbc.exe
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\vbc.exe.config
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\vbc.rsp
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\VBCSCompiler.exe
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\roslyn\VBCSCompiler.exe.config
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\EntityFramework.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\EntityFramework.SqlServer.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\Microsoft.Web.Infrastructure.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\PagedList.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\PagedList.Mvc.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.Helpers.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.Mvc.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.Razor.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.WebPages.Deployment.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.WebPages.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.WebPages.Razor.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\EntityFramework.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\EntityFramework.SqlServer.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\PagedList.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\PagedList.Mvc.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.Helpers.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.Mvc.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.Razor.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.WebPages.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.WebPages.Deployment.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\System.Web.WebPages.Razor.xml
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\fr\EntityFramework.resources.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\fr\EntityFramework.SqlServer.resources.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\fr\System.Web.Helpers.resources.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\fr\System.Web.Mvc.resources.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\fr\System.Web.Razor.resources.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\fr\System.Web.WebPages.resources.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\bin\fr\System.Web.WebPages.Razor.resources.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\obj\Debug\agenda.csprojAssemblyReference.cache
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\obj\Debug\agenda.csproj.CoreCompileInputs.cache
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\obj\Debug\agenda.csproj.CopyComplete
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\obj\Debug\agenda.dll
+C:\www\Formation Dot .Net\Module 3 - .Net sur Web Back\Partie 4 - MVC\agenda\agenda\obj\Debug\agenda.pdb

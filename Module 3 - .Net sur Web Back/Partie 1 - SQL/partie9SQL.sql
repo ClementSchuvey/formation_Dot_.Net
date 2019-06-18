@@ -1,0 +1,102 @@
+--Avant Exo j'ai exécuté le fichier france.sql
+
+--Exo 1:
+--SELECT 
+--	[id],
+--	[region],
+--	[prefecture],
+--	[nom_region]
+--FROM [dbo].[regions]
+--GO
+
+--Exo 2:
+--SELECT [nom_dep]
+--FROM [dbo].[departements]
+--ORDER BY [nom_dep] ASC
+--GO
+
+--Exo 3:
+--SELECT [libelle],[cp]
+--  FROM [france].[dbo].[villes]
+--  WHERE [dep] = '60'
+--ORDER BY [cp]
+--GO
+
+--Exo 4:
+--SELECT TOP 3 [id]
+--      ,[cp]
+--      ,[insee]
+--      ,[article]
+--      ,[ville]
+--      ,[libelle]
+--      ,[region]
+--      ,[dep]
+--  FROM [france].[dbo].[villes]
+--  WHERE [cp] = '60400'
+--ORDER BY [ville] DESC
+--GO
+
+--Exo 5:
+--SELECT [id]
+--      ,[cp]
+--      ,[insee]
+--      ,[article]
+--      ,[ville]
+--      ,[libelle]
+--      ,[region]
+--      ,[dep]
+--FROM [france].[dbo].[villes]
+--WHERE [ville] LIKE '%Saint%'
+--GO
+
+--Exo 6:
+--SELECT	
+--	[dbo].[departements].[nom_dep] AS [nameDep],
+--	COUNT([dbo].[villes].[dep]) AS [numberTown]
+--FROM
+--	[dbo].[villes]
+--INNER JOIN
+--	[dbo].[departements]
+--	ON [dbo].[villes].[dep] = [dbo].[departements].[dep]
+--GROUP BY
+--	[dbo].[departements].[nom_dep]
+--GO
+
+--Exo 7:
+--SELECT 
+--	[article],
+--    [ville],
+--    [libelle],
+--	[nom_region]
+--FROM
+--	[dbo].[villes]
+--INNER JOIN
+--	[dbo].[regions]
+--	ON [dbo].[villes].[region] = [dbo].[regions].[region]
+--WHERE
+--	[dbo].[regions].[nom_region] = 'Picardie'
+--GO
+
+--Exo 8:
+--SELECT
+--	[dbo].[departements].[nom_dep] AS [nameRegionOrDep],
+--	COUNT([dbo].[villes].[dep]) AS [NumberTownDepOrRegion]
+--FROM
+--	[dbo].[villes]
+--INNER JOIN
+--	[dbo].[departements]
+--	ON [dbo].[villes].[dep] = [dbo].[departements].[dep]
+--GROUP BY
+--	[dbo].[departements].[nom_dep]
+--UNION
+--SELECT
+--	[dbo].[regions].[nom_region] AS [nameRegionOrDep],
+--	COUNT([dbo].[villes].[region]) AS [NumberTownDepOrRegion]
+--FROM
+--	[dbo].[villes]
+--INNER JOIN
+--	[dbo].[regions]
+--	ON [dbo].[villes].[region] = [dbo].[regions].[region]
+--GROUP BY
+--	[dbo].[regions].[nom_region]
+--GO

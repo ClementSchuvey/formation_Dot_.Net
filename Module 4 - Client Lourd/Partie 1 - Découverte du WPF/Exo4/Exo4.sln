@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo4", "Exo4\Exo4.csproj", "{7E6E64B9-2CF0-49B1-A9D4-AC84DAA92C00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E6E64B9-2CF0-49B1-A9D4-AC84DAA92C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6E64B9-2CF0-49B1-A9D4-AC84DAA92C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6E64B9-2CF0-49B1-A9D4-AC84DAA92C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6E64B9-2CF0-49B1-A9D4-AC84DAA92C00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12FB862C-2B86-4D33-9524-531C9FAE98FF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Exercice 6</title>
+</head>
+<body>
+    <!-- on crée un formulaire-->
+    <form action="" method="post">
+        <!-- fieldset regroupe plusieurs contrôles interactifs ainsi que des étiquettes-->
+        <fieldset id="identity">
+            <!-- La légende du formulaire -->
+            <legend>Votre identité</legend>
+            <!-- liste avec les input du formulaire -->
+            <ul>
+                <li><label from="name">1. Nom : </label><input type="text" name="name" value="" /></li>
+                <li><label from="nickname">2. Prénom : </label><input type="text" name="nickName" value="" /></li>
+                <li><label from="mail">3. Adresse mail :</label> <input type="text" name="mail" value="" /></li>
+            </ul>
+        </fieldset>
+
+        <!-- fieldset regroupe plusieurs contrôles interactifs ainsi que des étiquettes-->
+        <fieldset id="from">
+            <!-- La légende du formulaire -->
+            <legend>Adresse de livraison</legend>
+            <!-- liste avec les input du formulaire -->
+            <ul>
+                <li><label from="adresse">1. Adresse : </label><textarea name="adresse" rows="5" cols="33"></textarea></li>
+                <li><label from="postalNumber">2. Code Postal : </label><input type="text" name="postalNumber" value="" /></li>
+                <li><label from="from">3. ville : </label><input type="text" name="from" value="" /></li>
+            </ul>
+        </fieldset>
+
+        <!-- fieldset regroupe plusieurs contrôles interactifs ainsi que des étiquettes-->
+        <fieldset id="pay">
+            <!-- La légende du formulaire -->
+            <legend>Information de réglement</legend>
+            <!-- liste avec les input du formulaire -->
+            <ul>
+                <li>
+                    <label from="typeCard">1. type de carte banquaire:</label>
+                    <ul>
+                        <li><input type="radio" name="typeCard" value="visa" /> VISA</li>
+                        <li><input type="radio" name="typeCard" value="mastercard" /> Mastercard</li>
+                    </ul>
+                </li>
+                <li><label from="numberCard">2. Numero de carte : </label><input type="text" name="numberCard" value="" /></li>
+                <li><label from="securityCode">3. Code de sécurité : </label><input type="text" name="securityCode" value="" /></li>
+                <li><label from="nameTitu">4. Nom de titulaire : </label><input type="text" name="nameTitu" value="" /></li>
+            </ul>
+        </fieldset>
+        <!-- Bouton envoyer le formulaire -->
+        <input type="submit" value="J'achète !" />
+    </form>
+</body>
+</html>

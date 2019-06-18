@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ViewBag.Title  affiche le titre la views -->
+    <title>Agenda | @ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="body">
+    <div id="backgroundPicture" class="position-fixed">
+        <img src="~/Picture/background.jpg" alt="Image background" class="w-100" />
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg backgroundGreen p-0">
+            <!-- Logo Accueil-->
+            <!-- je crée un url avec comme paramètre la méthode Index du controller home-->
+            <a class="navbar-brand ml-1" href="@Url.Action("Index", "Home")" title="Accueil">
+                <i class="fas fa-home fa-2x classForIcone "></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarLayout" aria-controls="navBarLayout" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-2x classForIcone"></i>
+            </button>
+            <!-- Liste des nav -->
+            <div class="collapse- navbar-collapse backgroundGreen" id="navBarLayout">
+                <ul class="navbar-nav">
+                    <li class="nav-item ElementNav ml-0 ml-lg-3 text-center text-lg-left text-uppercase font-weight-bold">
+                        <!-- Je crée une balise a sur le text "Ajouter Courtier" qui auras comme URL /Broker/AddBroker -->
+                        @Html.ActionLink("Ajouter Courtier", "AddBroker", "Broker", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item ElementNav ml-0 ml-lg-3 text-center text-lg-left text-uppercase font-weight-bold">
+                        @Html.ActionLink("Liste des Courtiers", "ListBroker", "Broker", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item ElementNav ml-0 ml-lg-3 text-center text-lg-left text-uppercase font-weight-bold">
+                        @Html.ActionLink("Ajouter Client", "AddCustomer", "Customer", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item ElementNav ml-0 ml-lg-3 text-center text-lg-left text-uppercase font-weight-bold">
+                        @Html.ActionLink("Liste des Clients", "ListCustomer", "Customer", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item ElementNav ml-0 ml-lg-3 text-center text-lg-left text-uppercase font-weight-bold">
+                        @Html.ActionLink("Ajouter RDV", "AddAppointment", "Appointment", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    @RenderBody()
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/bootstrap-notify.min.js"></script>
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="~/Scripts/globalize.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/Scripts/script.js"></script>
+    @if (ViewBag.JavaScriptFunction != null)
+    {
+        <script type="text/javascript">
+            @Html.Raw(ViewBag.JavaScriptFunction)
+        </script>
+    }
+</body>
+</html>

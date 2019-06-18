@@ -1,0 +1,7 @@
+C:\Users\Dell\Desktop\Partie 1\Exo4\Exo4\bin\Debug\Exo4.exe.config
+C:\Users\Dell\Desktop\Partie 1\Exo4\Exo4\bin\Debug\Exo4.exe
+C:\Users\Dell\Desktop\Partie 1\Exo4\Exo4\bin\Debug\Exo4.pdb
+C:\Users\Dell\Desktop\Partie 1\Exo4\Exo4\obj\Debug\Exo4.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\Partie 1\Exo4\Exo4\obj\Debug\Exo4.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\Partie 1\Exo4\Exo4\obj\Debug\Exo4.exe
+C:\Users\Dell\Desktop\Partie 1\Exo4\Exo4\obj\Debug\Exo4.pdb

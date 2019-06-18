@@ -1,0 +1,90 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Agenda.Views"
+      xmlns:Models="clr-namespace:Agenda.Models" x:Class="Agenda.Views.listAppointmentPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" Loaded="listAppointmentPage_Loaded"
+      Title="Liste des RDV">
+
+    <Page.Resources>
+        <CollectionViewSource x:Key="appointmentsViewSource" d:DesignSource="{d:DesignInstance {x:Type Models:appointments}, CreateList=True}"/>
+    </Page.Resources>
+
+
+    <Grid DataContext="{StaticResource appointmentsViewSource}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="27*"/>
+        </Grid.RowDefinitions>
+        <!-- _____________________LISTE DES COURTIERS_________________ -->
+        <Rectangle Fill="#EBEBEBEE" Grid.RowSpan="7"/>
+        <TextBlock Text="Liste des Rendez-vous" Foreground="GhostWhite" Background="Orange" FontWeight="Bold" FontSize="28" TextAlignment="Center" Height="40" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <DataGrid x:Name="appointmentDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10,7,10,10" Grid.RowSpan="6" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="customerColumn" Binding="{Binding customers.fullName}" Header="Client" Width="SizeToCells"/>
+                <DataGridTextColumn x:Name="brokerColumn" Binding="{Binding brokers.fullName}" Header="Courtier" Width="SizeToCells"/>
+                <DataGridTextColumn x:Name="dateColumn" Binding="{Binding dateHour, StringFormat=dd/MM/yyyy HH:mm}" Header="Date" Width="SizeToCells"/>
+                <DataGridTextColumn x:Name="subjectColumn" Binding="{Binding subject}" Header="Sujet" Width="SizeToCells"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- _____________________MODIFIER DES CLIENTS______________________ -->
+        <Rectangle Grid.Column="1" Fill="#EBFFA500" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="288" Grid.RowSpan="7" Grid.ColumnSpan="2"/>
+        <TextBlock Text="Modifier" Foreground="GhostWhite" Background="Orange" FontWeight="Bold" FontSize="28" TextAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Border HorizontalAlignment="Left" Height="450" Grid.RowSpan="7" VerticalAlignment="Top" Width="5" Grid.Column="1" Background="#FFB47708"/>
+        <TextBlock Text="{Binding SelectedItem.id, ElementName=appointmentDataGrid}" Visibility="Hidden" x:Name="TextBlock_idAppointment"/>
+        <!-- client -->
+        <StackPanel Margin="5,0,0,0" Grid.Column="1" Grid.Row="1">
+            <Label Content="Client" Foreground="#333333" FontWeight="Bold" FontSize="15" Margin="10,0" Height="30"/>
+            <ComboBox SelectedValue="{Binding ElementName=appointmentDataGrid, Path=SelectedValue.id_customers, Mode=TwoWay}" x:Name="ComboBox_Customer" ItemsSource="{Binding}" DisplayMemberPath="fullName" FontSize="12" Margin="10,0,10,0"/>
+            <TextBlock x:Name="TextBlock_CustomerErrorMessage" Foreground="Crimson" FontSize="11" Margin="10,0"/>
+        </StackPanel>
+        <!-- courtier -->
+        <StackPanel Grid.Column="2" Grid.Row="1">
+            <Label Content="Courtier" Foreground="#333333" FontWeight="Bold" FontSize="15" Margin="10,0" Height="30"/>
+            <ComboBox SelectedValue="{Binding ElementName=appointmentDataGrid, Path=SelectedValue.id_brokers}" x:Name="ComboBox_Broker" ItemsSource="{Binding}" DisplayMemberPath="fullName" FontSize="12" Margin="10,0,10,0"/>
+            <TextBlock x:Name="TextBlock_BrokerErrorMessage" Foreground="Crimson" FontSize="11" Margin="10,0"/>
+        </StackPanel>
+        <!-- Date du RDV -->
+        <StackPanel Margin="5,0,0,0" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2">
+            <Label Content="Date du RDV" Foreground="#333333" FontWeight="Bold" FontSize="15" Margin="10,0" Height="30"/>
+            <DatePicker SelectedDate="{Binding ElementName=appointmentDataGrid, Path=SelectedValue.dateHour}" x:Name="DatePicker_Date" FontSize="12" Margin="10,0,10,0" CalendarClosed="DatePicker_Date_CalendarClosed"/>
+            <TextBlock x:Name="TextBlock_DateErrorMessage" Foreground="Crimson" FontSize="11" Margin="10,0"/>
+        </StackPanel>
+        <!-- Heure du RDV -->
+        <StackPanel Margin="10,0" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2">
+            <Label Content="Heure du RDV" Foreground="#333333" FontWeight="Bold" FontSize="15" Margin="10,0" Height="30"/>
+            <WrapPanel>
+                <TextBox Text="{Binding ElementName=appointmentDataGrid, Path=SelectedValue.timeSlotHour, Mode=OneWay}" x:Name="TextBox_Hour" FontSize="12" Width="100" KeyUp="TextBox_Hour_KeyUp"/>
+                <TextBlock Text="H" FontSize="12"/>
+                <TextBox Text="{Binding ElementName=appointmentDataGrid, Path=SelectedValue.timeSlotMinute, Mode=OneWay}" x:Name="TextBox_Minute" FontSize="12" Width="100" Margin="40, 0,0,0" KeyUp="TextBox_Minute_KeyUp"/>
+                <TextBlock Text="m" FontSize="12"/>
+            </WrapPanel>
+            <TextBlock x:Name="TextBlock_HourErrorMessage" TextWrapping="Wrap" Foreground="Crimson" FontSize="11" Margin="10,0"/>
+            <TextBlock x:Name="TextBlock_MinuteErrorMessage" TextWrapping="Wrap" Foreground="Crimson" FontSize="11" Margin="10,0"/>
+        </StackPanel>
+        <!-- Sujet -->
+        <StackPanel Margin="10,0" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2">
+            <Label Content="Sujet" Foreground="#333333" FontWeight="Bold" FontSize="15" Margin="10,0" Height="34"/>
+            <TextBox Text="{Binding ElementName=appointmentDataGrid, Path=SelectedItem.subject}" x:Name="TextBox_Subject" FontSize="12" Margin="10,0,10,0" KeyUp="TextBox_Subject_KeyUp"/>
+            <TextBlock x:Name="TextBlock_SubjectErrorMessage" Foreground="Crimson" FontSize="11" Margin="10,0"/>
+        </StackPanel>
+        <!-- LES BOUTONS -->
+        <Button Click="Button_EditBroker_Click" Margin="10,4,4,1" Content="Enregistrer" Background="YellowGreen" Grid.Column="1" Grid.Row="5" />
+        <Button Click="Button_DeleteBroker_Click" Margin="10,5,12,0" Content="Supprimer" Background="Crimson" Grid.Column="2" Grid.Row="5" />
+        <TextBlock x:Name="TextBlock_SuccesMessage" TextAlignment="Center" Foreground="ForestGreen" FontWeight="Bold" VerticalAlignment="Center" FontSize="18" Margin="10,43,10,0" Height="28" Grid.Row="5" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+    </Grid>
+</Page>

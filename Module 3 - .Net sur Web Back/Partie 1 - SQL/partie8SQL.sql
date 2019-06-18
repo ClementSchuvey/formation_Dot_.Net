@@ -1,0 +1,42 @@
+--Avant exo j'ai exécuté le fichier bbd.sql
+
+--Exo 1:
+--SELECT [dbo].[frameworks].[id], [dbo].[frameworks].[name] AS 'NameFamework', [languagesId], [dbo].[languages].[name] AS 'NameLanguage'
+--FROM [dbo].[frameworks]
+--RIGHT JOIN [dbo].[languages]
+--ON [dbo].[frameworks].[languagesId] = [dbo].[languages].[id]
+--GO
+
+--Exo 2:
+--SELECT [dbo].[frameworks].[id], [dbo].[frameworks].[name] AS 'NameFamework', [languagesId], [dbo].[languages].[name] AS 'NameLanguage'
+--FROM [dbo].[frameworks]
+--INNER JOIN [dbo].[languages]
+--ON [dbo].[frameworks].[languagesId] = [dbo].[languages].[id]
+--GO
+
+--Exo 3:
+--SELECT	
+--	[dbo].[languages].[name] AS [NameLanguages],
+--	COUNT([dbo].[frameworks].[name]) AS [numberFramework]
+--FROM
+--	[dbo].[frameworks]
+--INNER JOIN 
+--	[dbo].[languages]
+--	ON [dbo].[frameworks].[languagesId] = [dbo].[languages].[id]
+--GROUP BY [dbo].[languages].[name]; 
+--GO
+
+--Exo 4:
+--SELECT	
+--	[dbo].[languages].[name] AS [NameLanguages],
+--	COUNT([dbo].[frameworks].[name]) AS [numberFramework]
+--FROM
+--	[dbo].[frameworks]
+--INNER JOIN 
+--	[dbo].[languages]
+--	ON [dbo].[frameworks].[languagesId] = [dbo].[languages].[id]
+--GROUP BY 
+--	[dbo].[languages].[name]
+--HAVING 
+--	COUNT([dbo].[frameworks].[name]) >= 3
+--GO
